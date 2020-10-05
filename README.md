@@ -1,6 +1,6 @@
 # Hello, this is Rohit!
 
-> I did my PhD in Geography from the Ohio State University (USA) and my research is on the **applications of deep learning on satellite imagery**. I mainly focus on improving the quality and availability of existing satellite imagery through image downscaling, image translation, and satellite image fusion. Currently learning more about generative modelling.
+> I did my PhD in Geography from the Ohio State University (USA) and my research is on the **applications of deep learning on satellite imagery**. I mainly focus on improving the quality and availability of existing satellite imagery through image downscaling, image translation, and satellite image fusion. Currently learning more about generative modelling. I full-taught Introductory GIS courses. I love maps and looking at the earth from above.
 
 <br>
 
