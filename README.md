@@ -2,7 +2,7 @@
 
 > I did my PhD in Geography from the Ohio State University (USA) and my research is on the **applications of deep learning on satellite imagery**. I mainly focus on improving the quality and availability of existing satellite imagery through image downscaling, image translation, and satellite image fusion. Currently learning more about generative modelling.
 
-
+<br>
 
 # ☎️ Contact information
 
@@ -12,7 +12,7 @@
 
 🔗 [LinkedIn](https://www.linkedin.com/in/rohitmukherjee/)
 
-
+<br>
 
 # 👨🏻‍🔬 Research Experience
 
@@ -24,7 +24,7 @@
 
 [Rohit18 - Overview](https://github.com/Rohit18)
 
-
+<br>
 
 # 📚 Education
 
@@ -38,6 +38,7 @@
 
 *Advisor: Dr. Desheng Liu*
 
+<br>
 
 # 🛠 Technical Skills
 
@@ -49,15 +50,19 @@
 
 *Statistics* - **R, Geoda**
 
-
+<br>
 
 # 👨🏻‍🏫 Teaching Experience
 
 > Full taught four summer graduate level courses and converted in-personGIS course to fully online. Prepared lectures and class activities, ranlabs, designed assignments and exams for courses with student popu-lation ranging from 35 to 144
 
+<br>
+
 ### ***Courses as Instructor:***
 
 **Fundamentals of GIS** - SU17, SU18, SU19 (In-person), SU20 (Online) 
+
+<br>
 
 ### ***Courses as Teaching Assistant:***
 
@@ -75,10 +80,10 @@
 
 **Geospatial Databases** - AU16 (Graduate)
 
+<br>
+
 ### *Guest Lectures:*
 
 **Geographic Applications of Remote Sensing** - AU16, SP19 (Graduate)
 
 **Spatial Data Analysis** - AU18 (Graduate)
-
-
