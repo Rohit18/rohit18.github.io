@@ -6,7 +6,7 @@
 
 # Resume
 
-[Link to my Resume (PDF)](https://drive.google.com/file/d/1zlDgGxCufOSa6QyUgZEafFrlmb43gAIr/view?usp=sharing)
+[Link to my Resume (PDF)](https://drive.google.com/file/d/1N-htYhxj2tak_flQuemQu_KkudUhu8hL/view?usp=sharing)
 
 <br>
 
