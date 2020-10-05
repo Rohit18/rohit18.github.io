@@ -24,7 +24,7 @@
 
 [Rohit18 - Overview](https://github.com/Rohit18)
 
----
+
 
 # 📚 Education
 
@@ -38,7 +38,6 @@
 
 *Advisor: Dr. Desheng Liu*
 
----
 
 # 🛠 Technical Skills
 
@@ -50,7 +49,7 @@
 
 *Statistics* - **R, Geoda**
 
----
+
 
 # 👨🏻‍🏫 Teaching Experience
 
@@ -82,4 +81,4 @@
 
 **Spatial Data Analysis** - AU18 (Graduate)
 
----
+
