@@ -4,7 +4,13 @@
 
 <br>
 
-# ☎️ Contact information
+# Resume
+
+[Link to my Resume (PDF)](https://drive.google.com/file/d/1zlDgGxCufOSa6QyUgZEafFrlmb43gAIr/view?usp=sharing)
+
+<br>
+
+# ☎️ Contact
 
 📧 rohitmukherjee@live.com
 
