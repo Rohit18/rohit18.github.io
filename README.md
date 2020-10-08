@@ -36,7 +36,7 @@
 
 **PhD in Geography**
 
-**Department of Geography, The Ohio State University, USA**
+**Department of Geography, The Ohio State University, Columbus, Ohio, USA**
 
 ***Aug 2016 - Aug 2020***
 
@@ -45,6 +45,12 @@
 *Advisor: Dr. Desheng Liu*
 
 <br>
+
+**Masters in Geoinformatics**
+**Department of Remote Sensing< Birla Institute of Technology, Mesra, India**
+***July 2011 - July 2013***
+*Thesis: Extraction of Impervious Features using an artificial neural network*
+*Advisor: Dr. Nilanchal Patel*
 
 # 🛠 Technical Skills
 
