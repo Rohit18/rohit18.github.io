@@ -47,10 +47,16 @@
 <br>
 
 **Masters in Geoinformatics**
+
 **Department of Remote Sensing< Birla Institute of Technology, Mesra, India**
+
 ***July 2011 - July 2013***
+
 *Thesis: Extraction of Impervious Features using an artificial neural network*
+
 *Advisor: Dr. Nilanchal Patel*
+
+<br>
 
 # 🛠 Technical Skills
 
