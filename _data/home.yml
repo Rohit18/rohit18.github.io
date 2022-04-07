@@ -1,39 +1,58 @@
 navbar_entries:
-  - title: about
+  - title: twitter
+    url: https://twitter.com/RohitMukherjee9
+
+  - title: github
+    url: https://github.com/Rohit18
+
+  - title: social [pixel] lab
+    url: https://beth-tellman.github.io/
+
+  - title: google scholar
+    url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
+  
+  - title: about me
     url: about
 
-  - title: blog
-    url: blog
 
-  - title: website
-    url: https://www.abhinav.co
+
+
+
 
 project_entries:
-  - title: Project 1
+  - title: NASA THP
     url: overview-post
-    desc: This is an example project, configured in _data/home.yml
-
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
-
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
-
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
+    desc: Mapping Urban Floods
     highlight: WIP
 
-  - title: Project 5
+  - title: NASA LCLUC
     url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
+    desc: Mapping illicit infrastructure mapping
     highlight: WIP
 
-  - title: Project 6
+  - title: Water Mapping
     url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+    desc: using Sentinel-1 and deep learning (NASA project)
+    highlight: WIP
+
+  - title: Pima County
+    url: overview-post
+    desc: mapping flash floods using satellite imagery
+    highlight: WIP
+
+  - title: Downscaling MODIS
+    url: overview-post
+    desc: using deep learningn superresolution networks
+
+  - title: Data Fusion
+    url: overview-post
+    desc: spectral and spatial harmonization of Landsat 8 and Sentinel-2 using GANs
+
+  - title: Glaciers of Peru
+    url: overview-post
+    desc: mapping extents across 1984 to 2020 in Peru
+
+
 
 old_project_entries:
   - title: Soopr
@@ -54,17 +73,22 @@ old_project_entries:
     desc: The better people know you, the better they collaborate
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
-
   - title: twitter
-    url: https://twitter.com/abhinav
+    url: https://twitter.com/RohitMukherjee9
 
   - title: github
-    url: https://github.com/abhinavs
+    url: https://github.com/Rohit18
 
-  - title: feed
-    url: feed.xml
+  - title: social [pixel] lab
+    url: https://beth-tellman.github.io/
+
+  - title: google scholar
+    url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
+  
+  - title: about me
+    url: about
+
+
 
 misc_entries:
   - title: this is an example vertical list
