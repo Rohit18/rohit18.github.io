@@ -14,63 +14,64 @@ navbar_entries:
   - title: about me
     url: about
 
-
-
-
-
-
 project_entries:
-  - title: NASA THP
+  - title: Mapping Urban Flood Extent in Urban Areas Globally using satellite imagery and machine learning [NASA Terrrestrial Hydrology Project (THP)]
     url: overview-post
-    desc: Mapping Urban Floods
-    highlight: WIP
+    desc: Mapping Urban Flood Extent in Urban Areas Globally using satellite imagery and machine learning
+ 
 
-  - title: NASA LCLUC
+  - title: Mapping illicit infrastructure in the protected forests of Central America using satellite imagery and machine learning [NASA Land Cover and Land Use Change (LCLUC) Project]
     url: overview-post
-    desc: Mapping illicit infrastructure mapping
-    highlight: WIP
+    desc: Mapping illicit infrastructure in the protected forests of Central America using satellite imagery and machine learning
+  
 
-  - title: Water Mapping
+  - title: Validating the accuracy of existing surface water mapping methods using high resolution commerical satellite imagery [NASA Advanced Communications Capabilities for Exploration and Science Systems (ACCESS) Project]
     url: overview-post
-    desc: using Sentinel-1 and deep learning (NASA project)
-    highlight: WIP
+    desc: Validating the accuracy of existing surface water mapping methods using high resolution commerical satellite imagery
 
-  - title: Pima County
+  - title: Measuring outcomes of humanitarian assistance programs using satellite imagery and machine learning, [Bureau of Humanitarian Assistance (BHA) Project]
     url: overview-post
-    desc: mapping flash floods using satellite imagery
-    highlight: WIP
+    desc: Measuring outcomes of humanitarian assistance programs using satellite imagery and machine learning
+   
 
-  - title: Downscaling MODIS
+  - title: Mapping flood extent in Pima County, Arizona using satellite imagery and machine learning
     url: overview-post
-    desc: using deep learningn superresolution networks
-
-  - title: Data Fusion
-    url: overview-post
-    desc: spectral and spatial harmonization of Landsat 8 and Sentinel-2 using GANs
-
-  - title: Glaciers of Peru
-    url: overview-post
-    desc: mapping extents across 1984 to 2020 in Peru
-
-
+    desc: Mapping flood extent in Pima County, Arizona using satellite imagery and machine learning
 
 old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
+  - title: Mapping glacier extents across 1984 to 2020 in Peru
+    url: overview-post
+    desc: Mapping glacier extents across 1984 to 2020 in Peru
 
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
+  - title: Downscaling MODIS using deep learning super resolution methods (PhD Dissertation Chapter 1)
+    url: overview-post
+    desc: PhD Dissertation Chapter 1
 
-  - title: Moonwalk
-    url: https://github.com/abhinavs/moonwalk
-    desc: A fast and minimalist Jekyll blog theme with clean dark mode
+  - title: Fusing Landsat and Sentinel-2 data using deep learning (PhD Dissertation Chapter 3)
+    url: overview-post
+    desc: PhD Dissertation Chapter 3
 
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
+  - title: Translating MODIS to Landsat 8 imagery using deep learning (PhD Dissertation Chapter 2)
+    url: overview-post
+    desc: PhD Dissertation Chapter 2
+
+
+  # - title: Soopr
+  #   url: https://www.soopr.co
+  #   desc: Delight your readers - add beautiful share and like buttons easily to your websites 
+  #   highlight: NEW
+
+  # - title: Cookie
+  #   url: https://github.com/abhinavs/cookie
+  #   desc: An open source landing website with supporting pages and integrated blog
+
+  # - title: Moonwalk
+  #   url: https://github.com/abhinavs/moonwalk
+  #   desc: A fast and minimalist Jekyll blog theme with clean dark mode
+
+  # - title: Humangous
+  #   url: https://www.humangous.co
+  #   desc: The better people know you, the better they collaborate
 
 footer_entries:
   - title: twitter
@@ -85,7 +86,10 @@ footer_entries:
   - title: google scholar
     url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
   
-  - title: about me
+  - title: linkedin
+    url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
+  
+  - title: about meS
     url: about
 
 
