@@ -16,8 +16,22 @@ layout: default
 
 {{ content }}
 
+<style>
+  /* Default styles */
+  p {
+    font-size: 16px;
+  }
+  
+  /* Media query for screens smaller than 768px */
+  @media (max-width: 767px) {
+    p {
+      font-size: 12px;
+    }
+  }
+</style>
+
 <section id="custom-section" style="display: flex;">
-  <div style="flex: 1; margin-right: 20px;">
+  <div style="flex: 1;">
     <p>I am a postdoctoral researcher specializing in the application of machine learning and deep learning techniques in geospatial analysis. I work on projects related to urban flooding, informal road detection in Central America, global surface water detection, and assessing the impact of humanitarian assistance programs.</p>
     <p>I enjoy working with satellite imagery and extract meaningful information with a focus on the drivers of climate change and their impact.</p>
     <p>I am currently working at the social [pixel] lab at the University of Arizona with the simply brilliant Dr. Beth Tellman.</p>
