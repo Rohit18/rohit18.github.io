@@ -14,7 +14,7 @@ navbar_entries:
   - title: linkedin
     url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
   
-  - title: CV
+  - title: cv
     url: https://drive.google.com/file/d/1za41qTstL2_n0mCIqCvpiGq8sIFoXB79/view?usp=sharing
 
 project_entries:
@@ -93,7 +93,7 @@ footer_entries:
   - title: linkedin
     url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
   
-  - title: CV
+  - title: cv
     url: https://drive.google.com/file/d/1za41qTstL2_n0mCIqCvpiGq8sIFoXB79/view?usp=sharing
 
 
