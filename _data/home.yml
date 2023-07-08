@@ -10,31 +10,34 @@ navbar_entries:
 
   - title: google scholar
     url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
+
+  - title: linkedin
+    url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
   
-  - title: about me
-    url: about
+  - title: CV
+    url: https://drive.google.com/file/d/1za41qTstL2_n0mCIqCvpiGq8sIFoXB79/view?usp=sharing
 
 project_entries:
-  - title: Mapping Urban Flood Extent in Urban Areas Globally using satellite imagery and machine learning [NASA Terrrestrial Hydrology Project (THP)]
+  - title: Mapping Urban Flood Extent in Urban Areas Globally using satellite imagery and machine learning - NASA Terrrestrial Hydrology Project (THP)
     url: overview-post
     desc: Mapping Urban Flood Extent in Urban Areas Globally using satellite imagery and machine learning
  
 
-  - title: Mapping illicit infrastructure in the protected forests of Central America using satellite imagery and machine learning [NASA Land Cover and Land Use Change (LCLUC) Project]
+  - title: Mapping illicit infrastructure in the protected forests of Central America using satellite imagery and machine learning - NASA Land Cover and Land Use Change (LCLUC) Project
     url: overview-post
     desc: Mapping illicit infrastructure in the protected forests of Central America using satellite imagery and machine learning
   
 
-  - title: Validating the accuracy of existing surface water mapping methods using high resolution commerical satellite imagery [NASA Advanced Communications Capabilities for Exploration and Science Systems (ACCESS) Project]
+  - title: Validating the accuracy of existing surface water mapping methods using high resolution commerical satellite imagery - NASA Advanced Communications Capabilities for Exploration and Science Systems (ACCESS) Project
     url: overview-post
     desc: Validating the accuracy of existing surface water mapping methods using high resolution commerical satellite imagery
 
-  - title: Measuring outcomes of humanitarian assistance programs using satellite imagery and machine learning, [Bureau of Humanitarian Assistance (BHA) Project]
+  - title: Measuring outcomes of humanitarian assistance programs using satellite imagery and machine learning - USAID Bureau of Humanitarian Assistance (BHA)
     url: overview-post
     desc: Measuring outcomes of humanitarian assistance programs using satellite imagery and machine learning
    
 
-  - title: Mapping flood extent in Pima County, Arizona using satellite imagery and machine learning
+  - title: Mapping flood extent in Pima County, Arizona using satellite imagery and machine learning - Pima County, Arizona
     url: overview-post
     desc: Mapping flood extent in Pima County, Arizona using satellite imagery and machine learning
 
@@ -73,6 +76,7 @@ old_project_entries:
   #   url: https://www.humangous.co
   #   desc: The better people know you, the better they collaborate
 
+
 footer_entries:
   - title: twitter
     url: https://twitter.com/RohitMukherjee9
@@ -89,8 +93,8 @@ footer_entries:
   - title: linkedin
     url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
   
-  - title: about meS
-    url: about
+  - title: CV
+    url: https://drive.google.com/file/d/1za41qTstL2_n0mCIqCvpiGq8sIFoXB79/view?usp=sharing
 
 
 

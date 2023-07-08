@@ -2,19 +2,13 @@ title: Rohit Mukherjee, Ph.D.
 author: Rohit Mukherjee
 url: www.rohitmukherjee.space # root address of the site
 description: > # description of the site (multiple lines allowed)
-  Postdoctoral researcher in the social [pixel] lab at the University of Arizona's School of Geography, Development, and Environment since June 2021.
+  I am a postdoctoral researcher specializing in the application of machine learning and deep learning techniques in geospatial analysis. I work on 
+  projects related to urban flooding, informal road detection in Central America, global surface water detection, and assessing the impact of humanitarian
+  assistance programs.
+  
+  I enjoy working with satellite imagery and extract meaningful information focusing on the drivers and impact of climate change.
 
-
-  Previosuly, PhD in Geography (2016 to 2020) from Ohio State University on improving satellite imagery using deep learning superresolution and translation methods.  Masters in GIScience (BIT Mesra, India), and Bachelors in Computer Science (St. Xaveier's College, Calcutta, India).
-
-
-  Workinon three projects: Mapping Urban Floods, Surface Water, River Width, and illicit infrastructure in Central America.
-  Currently living in sunny Tucson, Arizona.
-
-#add an image to the top of the page
-image: //images/rohitMinnesota.jpg
-
-
+  I am currently working at the social [pixel] lab at the University of Arizona with Dr. Beth Tellman.
 
 permalink: /:slug
 
@@ -28,22 +22,22 @@ twitter:
 remote_theme: abhinavs/moonwalk
 
 theme_config:
-  appearance: "dark" # can be "light", "dark" or "auto"
+  appearance: "light" # can be "light", "dark" or "auto"
   appearance_toggle: false # if appearance can be switched by user
   back_home_text: "home" # customize text for homepage link in post layout
-  date_format: "%m-%d-%Y" # customize how date is formatted
-  show_description: true # show blog description
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: false # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: true # show footer links in home page,add in _data/home.yml
-  show_copyright: false # show copyright notice in footer
+  show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
-  show_blog: false # show blog posts added in _posts
+  show_blog: true # show blog posts added in _posts
   show_old_projects: true # show old projects as cards, add in _data/home.yml
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  show_misc_list: true # show generic vertical list for misc details, add _data/home.yml
   # options for "home" page
   home:
-    title_projects: Research
+    title_projects: Research Projects
     title_misc_list: Current Projects
     title_old_projects: Previous Projects
     title_blog: Blog

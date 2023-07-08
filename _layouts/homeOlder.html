@@ -1,0 +1,135 @@
+---
+layout: default
+---
+
+<header>
+{% if site.theme_config.show_navbar == true %}
+  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
+  <div class="dashed"></div>
+{% endif %}
+
+  <h1>{{ site.title }}</h1>
+  {% if site.theme_config.show_description == true %}
+    <p>{{ site.description }}</p>
+  {% endif %}
+</header>
+
+{{ content }}
+
+<section id="custom-section" style="display: flex;">
+  <div style="flex: 1;">
+    <p>I am a postdoctoral researcher specializing in the application of machine learning and deep learning techniques in geospatial analysis. I work on projects related to urban flooding, informal road detection in Central America, global surface water detection, and assessing the impact of humanitarian assistance programs.</p>
+    <p>I enjoy working with satellite imagery and extract meaningful information focusing on the drivers and impact of climate change.</p>
+    <p>I am currently working at the social [pixel] lab at the University of Arizona with the simply brilliant Dr. Beth Tellman.</p>
+  </div>
+  <div style="flex: 1;">
+    <img src="images/me.jpg" alt="Image description">
+  </div>
+</section>
+
+
+<section id="custom-section">
+  <h2>Urban Flooding</h2>
+  <p> A NASA Terrestrial Hydrology Project</p>
+  <p>We are trying to address an issue related to urban flooding as opposed to flooding in general. Why? Because it is more difficult to map urban floods due to complex and heterogeneous landscape. 
+    We are attempting to predict a daily flood extent map for the entire flooding duration. This requires fusing data from multiple sources with
+    different spatial, spectral, temporal resolutions, and measurement principles (optical and radar). 
+    We built a hand-labeled dataset using PlanetScope to capture urban flooding in 14 cities across the world called the Urban Flood Dataset (maybe we will come up with a better name for it). </p>
+    <img src="images/THP.png" alt="THP image">
+    <p><em> A sample from our training dataset built using Labelbox. Source: Planet. </em></p>
+</section>
+
+<section id="custom-section">
+  <h2>Informal Roads in Central America</h2>
+  <p>A NASA LCLUC Project. Working with and learning a lot from Nicholas Magglioca, Matt Fagan, Steven Sesnie, Erik Nielsen, Jennifer Devine, and Kendra McSweeney.</p>
+  <p>Narco-trafficking is a driver of deforestation in the protected forests in Central America. Markers of narco-trafficking are informal roads. We first developed a hand-labeled dataset to 
+    label roads and buildings. We found that our deep learning model trained on the hand-labeled dataset identified roads better than Microsoft and OSM combined. Not a surprise as its a local model with local data, nevertheless, quite cool. 
+    However, we are also interested in going back in time till 2001 using Landsat 7 (nototious for its SLC-off issue) to look at road growth over time. We are combining different sources of data to build a counter-factual model to measure the impact of narco-trafficking on deforestation.
+  </p>
+  <img src="images/LCLUC.jpg" alt="LCLUC image">
+  <p> <em> Markers of narco-trafficking in Central America. Sources: Planet and ESA. </em> </p>
+</section>
+
+<section id="custom-section">
+  <h2>Global Surface Water Mapping</h2>
+  <p>A NASA ACCESS Project. Enjoying working with Fritz Pollicelli. </p>
+  <p>We need validation datasets to evaluate the hundreds (thousands?) of surface water mapping methods using satellite imagery. We built a globally sampled dataset using PlanetScope imagery. 90 samples from all the Biomes. Currently building yet another deep learning model with a focus on sampling rather than the method with the help of the impressive SWORD dataset.</p>
+  <img src="images/FZ.png" alt="FZ image">
+  <p><em>Our 90 globally distributed samples overlayed on the different biomes. Source: World Wildlife Fund (WWF) Global Ecoregions Map</em></p>
+</section>
+
+<section id="custom-section">
+  <h2>Desert Floods in Arizona</h2>
+  <p>A Pima County Flood (Arizona) project.</p>
+  <p>Keeping it local. We tried to map the fast moving floods in the Sonoran desert and found how difficult it is (hardly any literature on it too). Instead of surface water we looked for wet soils 
+    immediately (next day around 10:30am) after a rainfall using PlanetScope imagery and comapared them to previous dry images to measure flood extent. We examined the locations of road closures and identified locations where there should be road closures next time there was flooding. </p>
+  <img src="images/PCF.jpg" alt="PCF image">
+  <p><em>Identifying regions where it flooded, but there weren't any road closures for safety. Source: Planet.</em></p>
+  </section>
+
+
+<section id="custom-section">
+  <h2>Tools</h2>
+  <p><strong>Geospatial Technologies:</strong> I work with geospatial python libraries like rasterio, geopandas, 
+    and geemap all the time. GDAL is my favorite (huge shout out to <a href="https://courses.spatialthoughts.com/gdal-tools.html">https://courses.spatialthoughts.com/gdal-tools.html</a>). When I need to visualize, I use QGIS, Google Earth Engine, and Microsoft Planetary. To download spatial data, I use GEE, <a href="https://www.earthdata.nasa.gov/eosdis/science-system-description/eosdis-components/cmr">NASA CMR</a>, and <a href="https://hyp3-docs.asf.alaska.edu/using/api/">Hyp3</a></p>
+
+  <p><strong>Machine Learning Tools:</strong> I learned deep learning using Keras and Tensforflow (Andrew Ng) many years ago , but <a href="https://docs.fast.ai/">Fastai</a> with Pytorch quickly became my goto due to their simpicity.</p>
+
+  <p><strong>Development Environments:</strong> I love coding with vscode (with the help of Copilot-X, which helps me try new things) and sometimes use Jupyter Notebooks (mostly to communicate)</p>
+
+  <p><strong>Computational Platforms:</strong> When training larger models, I use Google Colab (initial trial runs), Lambdabox (our lab has 2 3080s), High-Performance Computing (HPC) from UofA, and occiasionally Alaska Science Facility's OpenScienceLab.</p>
+
+  <p><strong>Version Control:</strong> I use Git and Github for version control and collaboration. Working with geospatial data means that I have to troubleshoot with almost every new dataset I work with, but I have those in our lab's private repos. </p>
+  
+  <p><strong>Image Annotation Tools:</strong> I spent some time annotating images using Labelbox and NASA ImageLabeler. Labelbox has more features but NASA ImageLabeler is quite impressive in itself. </p>
+
+</section>
+
+<section id="custom-section">
+  <h2>Resources I swear by</h2>
+  <ul>
+    <li>If you want a crash course on how to work with spatial data, raster and vector: <a href="https://carpentries-incubator.github.io/geospatial-python/">https://carpentries-incubator.github.io/geospatial-python/</a></li>
+    <li>If you want to learn about GDAL, follow this along with the GDAL documentation: <a href="https://spatialthoughts.com/courses/mastering-gdal-tools/">https://spatialthoughts.com/courses/mastering-gdal-tools/</a></li>
+    <li>If you want to get started with deep learning: <a href="https://course.fast.ai/">https://course.fast.ai/</a> and if you want to go one step further:  <a href="https://walkwithfastai.com/">https://walkwithfastai.com/</a></li>
+    <li>Please read their blogs, especially the ones on their geospatial workflows: <a href="https://developmentseed.org/">https://developmentseed.org/</a></li>
+    <li>Everyone knows this one. For GEE use with python: <a href="https://geemap.org/">https://geemap.org/</a></li>
+  </ul>
+</section>
+
+<!-- <section id="custom-section">
+  <h2>{{ site.data.home.custom_section_title }}</h2>
+  <p>{{ site.data.home.custom_section_text }}</p>
+  <img src="{{ site.data.home.custom_section_image }}" alt="Description of image">
+</section> -->
+
+
+<!-- {% if site.theme_config.show_projects == true %}
+  <h2>{{ site.theme_config.home.title_projects }}</h2>
+  {% include vertical_list.html collection=site.data.home.project_entries %}
+{% endif %} -->
+
+<!-- {% if site.theme_config.show_misc_list == true %}
+  <h2>{{ site.theme_config.home.title_misc_list }}</h2>
+  {% include vertical_list.html collection=site.data.home.misc_entries %}
+{% endif %}
+
+{% if site.theme_config.show_blog == true %}
+  <h2>{{ site.theme_config.home.title_blog }}</h2>
+  {% include post_list.html %}
+{% endif %}
+
+{% if site.theme_config.show_old_projects == true %}
+  <h2>{{ site.theme_config.home.title_old_projects }}</h2>
+  {% include vertical_list.html collection=site.data.home.old_project_entries %}
+{% endif %} -->
+
+
+
+
+
+{% if site.theme_config.show_footer == true %}
+  <footer>
+    <div class="dashed"></div>
+    {% include horizontal_list.html collection=site.data.home.footer_entries %}
+  </footer>
+{% endif %}
