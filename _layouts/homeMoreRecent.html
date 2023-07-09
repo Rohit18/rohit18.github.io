@@ -28,8 +28,6 @@ layout: default
       font-size: 14px;
     }
   }
-
-  
 </style>
 
 <section id="custom-section" style="display: flex;">
@@ -49,10 +47,10 @@ layout: default
 <section id="custom-section">
   <h2>Urban Flooding</h2>
   <p> A NASA Terrestrial Hydrology Project</p>
-  <p>We are trying to address issues related to urban flooding because it is more difficult 
-    to map these floods due to the complex and heterogeneous urban landscape. For this purpose, we built a 
-    hand-labeled dataset using PlanetScope to capture urban flooding in 14 cities 
-    across the world called the <em>Urban Flood Dataset</em> (maybe we will come up with a better name for it). </p>
+  <p>We are trying to address issues related to urban flooding, rather than flooding in general. Why? Because it is more difficult to map urban floods due to complex and heterogeneous landscape. 
+    We are attempting to predict a daily flood extent map for the entire flooding duration. This requires fusing data from multiple sources, 
+    each with different spatial, spectral, temporal resolutions and measurement principles (optical and radar). 
+    We built a hand-labeled dataset using PlanetScope to capture urban flooding in 14 cities across the world called the Urban Flood Dataset (maybe we will come up with a better name for it). </p>
     <img src="images/THP.png" alt="THP image">
     <p><em> A sample from our training dataset built using Labelbox. Source: Planet. </em></p>
     <p>Check out my talk on <a href="https://www.youtube.com/watch?v=mQQx-sbn9N4&ab_channel=IEEEGRSS">Youtube!</a></p>
@@ -60,11 +58,10 @@ layout: default
 
 <section id="custom-section">
   <h2>Informal Roads in Central America</h2>
-  <p>A NASA LCLUC Project. Working with and learning a lot from Nicholas Magliocca, Matthew Fagan, Steven Sesnie, Erik Nielsen, Jennifer Devine, and Kendra McSweeney.</p>
-  <p>We study how narco-trafficking drives Central American deforestation, using informal roads as indicators. 
-    We created a locally-trained deep learning model that outperforms Microsoft and OSM in identifying roads. 
-    To examine road growth since 2001, we're using Landsat 7
-    and combining other data sources to build a counter-factual model assessing narco-trafficking's impact on deforestation.
+  <p>A NASA LCLUC Project. Working with and learning a lot from Nicholas Magglioca, Matt Fagan, Steven Sesnie, Erik Nielsen, Jennifer Devine, and Kendra McSweeney.</p>
+  <p>Narco-trafficking is a driver of deforestation in the protected forests in Central America. Markers of narco-trafficking are informal roads. We first developed a hand-labeled dataset to 
+    label roads and buildings. We found that our deep learning model trained on the hand-labeled dataset identified roads better than Microsoft and OSM combined. Not a surprise as its a local model with local data, nevertheless, quite cool. 
+    However, we are also interested in going back in time till 2001 using Landsat 7 (nototious for its SLC-off issue) to look at road growth over time. We are combining different sources of data to build a counter-factual model to measure the impact of narco-trafficking on deforestation.
   </p>
   <img src="images/LCLUC.jpg" alt="LCLUC image">
   <p> <em> Markers of narco-trafficking in Central America. Sources: Planet and ESA. </em> </p>
@@ -73,9 +70,7 @@ layout: default
 <section id="custom-section">
   <h2>Global Surface Water Mapping</h2>
   <p>A NASA ACCESS Project. Enjoying working with Fritz Pollicelli. </p>
-  <p>We need validation datasets to evaluate the hundreds (thousands?) of surface water mapping methods using satellite imagery. 
-    We built a globally sampled hand-labeled dataset using PlanetScope imagery. Currently building yet another 
-    deep learning model with a focus on sampling rather than the method with the help of the impressive SWORD dataset.</p>
+  <p>We need validation datasets to evaluate the hundreds (thousands?) of surface water mapping methods using satellite imagery. We built a globally sampled dataset using PlanetScope imagery. 90 samples from all the Biomes. Currently building yet another deep learning model with a focus on sampling rather than the method with the help of the impressive SWORD dataset.</p>
   <img src="images/FZ.png" alt="FZ image">
   <p><em>Our 90 globally distributed samples overlayed on the different biomes. Source: World Wildlife Fund (WWF) Global Ecoregions Map</em></p>
 </section>
@@ -83,10 +78,8 @@ layout: default
 <section id="custom-section">
   <h2>Desert Floods in Arizona</h2>
   <p>A Pima County Flood (Arizona) project.</p>
-  <p>Keeping it local. We tried to map the fast moving floods in the Sonoran desert and found how difficult it is. 
-    Instead of surface water, we identified wet soils after rainfall events using PlanetScope imagery to measure flood extent. 
-    We examined the locations of road closures and identified locations where there should be road closures next time there was 
-    flooding. </p>
+  <p>Keeping it local. We tried to map the fast moving floods in the Sonoran desert and found how difficult it is (hardly any literature on it too). Instead of surface water we looked for wet soils 
+    immediately (next day around 10:30am) after a rainfall using PlanetScope imagery and comapared them to previous dry images to measure flood extent. We examined the locations of road closures and identified locations where there should be road closures next time there was flooding. </p>
   <img src="images/PCF.jpg" alt="PCF image">
   <p><em>Identifying regions where it flooded, but there weren't any road closures for safety. Source: Planet.</em></p>
   </section>
@@ -146,25 +139,6 @@ layout: default
 </section>
 
 <section id="custom-section">
-  <h2>Lab Contributions</h2>
-  <ul>
-    <li>Mentoring three grad students currently (four grad students)</li>
-    <li>Built lab's computational structure</li>
-    <li>Creating a targeted learning plan for applying deep learning in geospatial scenarios</li>
-    <li>Setup coding and GitHub upload rules</li>
-    <li>Educating grad students with minimal coding background in Machine Learning/Deep Learning</li>
-  </ul>
-</section>
-
-<section id="custom-section">
-  <h2>Grant Proposals</h2>
-  <ul>
-    <li>Wrote a third of a proposal that secured funding from USAID’s Bureau for Humanitarian Assistance (BHA).</li>
-    <li>Wrote a proposal for NASA's use of Capella which was rejected.</li>
-  </ul>
-</section>
-
-<section id="custom-section">
   <h2>Dissertation</h2>
   <p>“Improving Satellite Data Quality and Availability: A Deep learning Approach”. Research involves the improvement in quality and availability of existing satellite image products using deep learning models. Keywords - MODIS, Sentinel-2, Landsat 8, deep residual encoder decoder network, generative adversarial network, satellite image fusion.</p>
 </section>
@@ -210,20 +184,6 @@ layout: default
 </section>
 
 <section id="custom-section">
-  <h2>Education</h2>
-  <ul>
-    <li><strong>Ph.D., Geography</strong>, The Ohio State University (Aug 2016 - Aug 2020)<br>
-      Focus Areas: Remote Sensing, Deep Learning<br>
-      Advisor: Dr. Desheng Liu</li>
-    <li><strong>M.Sc., Geo-Informatics</strong>, Birla Institute of Technology, Mesra, India (2011 - 2013)<br>
-      Thesis: "Extraction of Impervious Features through Artificial Neural Network using Spectral Indices"<br>
-      Advisor: Dr. Nilanchal Patel</li>
-    <li><strong>B.Sc., Computer Science</strong>, St. Xavier's College, Kolkata, India (2008 - 2011)<br>
-      Thesis: "A Social Networking Website for Academics (SharEd)"</li>
-  </ul>
-</section>
-
-<section id="custom-section">
   <h2>Industry Experience</h2>
   <p>Cognizant Technology Solutions, Programmer Analyst, 2013 - 2015. </p>
     <p>I wrote a script in VBA that scrapes data from a DOS application for ESCROW and automates the manual data entry process reducing by 85%. 
@@ -232,16 +192,6 @@ layout: default
     Felt bored during my time there and decided to get a PhD.  
   </p>
 </section>
-
-
-<section id="custom-section">
-  <h2>Field Work</h2>
-  <p>Visited Costa Rica in the summer of 23 with Prof. Matt Fagan to collect training and validation data for mapping land use/cover and roads.</p>
-  <img src="images/CR.png" alt="CR image">
-  <p>Left: All collected road validation points in the Osa Peninsula (Costa Rica), Roads made of Asphalt and gravel from the nearby rivers 
-    (that is why so many misclassifications between them!), me (happy) in Corcovado National Park, and (right) roads along oil palm plantations.</p>
-</section>
-
 
 <section id="custom-section">
   <h2>Service</h2>
@@ -259,6 +209,13 @@ layout: default
 
 
 
+<section id="custom-section">
+  <h2>Field Work</h2>
+  <p>Visited Costa Rica in the summer of 23 with Prof. Matt Fagan to collect training and validation data for mapping land use/cover and roads.</p>
+  <img src="images/CR.png" alt="CR image">
+  <p>Left: All collected road validation points in the Osa Peninsula (Costa Rica), Roads made of Asphalt and gravel from the nearby rivers 
+    (that is why so many misclassifications between them!), me (happy) in Corcovado National Park, and (right) roads along oil palm plantations.</p>
+</section>
 
 {% if site.theme_config.show_footer == true %}
   <footer>
