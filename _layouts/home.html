@@ -45,18 +45,25 @@ layout: default
 </section>
 
 
-<div class="container">
-  <h2>Research Projects</h2>
-  <ul>
-    <li><a href="#urban-flooding">Urban Flooding</a></li>
-    <li><a href="#informal-roads">Informal Roads in Central America</a></li>
-    <li><a href="#global-surface-water">Global Surface Water Mapping</a></li>
-    <li><a href="#desert-floods">Desert Floods in Arizona</a></li>
-    <li><a href="#usaids">Assessing Intervention Programs by USAID</a></li>
-  </ul>
+<div class="container" style="display:flex;" id="research_list">
+  <div style="flex:1;">
+    <h2>Research Projects</h2>
+    <ul>
+      <li><a href="#urban-flooding">Urban Flooding</a></li>
+      <li><a href="#informal-roads">Informal Roads in Central America</a></li>
+      <li><a href="#global-surface-water">Global Surface Water Mapping</a></li>
+    </ul>
+  </div>
+  <div style="flex:1;margin-top:90px;">
+    <ul>
+
+      <li><a href="#desert-floods">Desert Floods in Arizona</a></li>
+      <li><a href="#usaids">Assessing Intervention Programs by USAID</a></li>
+    </ul>
+  </div>
 </div>
 
-<div id="table-of-contents" style="display:flex;">
+<div id="table-of-contents" style="display:flex; ">
   <div style="flex:1;">
     <h2>Overview</h2>
     <ul>
@@ -85,7 +92,7 @@ layout: default
  
   <section id="urban-flooding">
     <h2>Urban Flooding</h2>
-    <p> A NASA Terrestrial Hydrology Project</p>
+    <p> A NASA Terrestrial Hydrology Project.</p>
     <p>We are trying to address issues related to urban flooding because it is more difficult 
       to map these floods due to the complex and heterogeneous urban landscape. For this purpose, we built a 
       hand-labeled dataset using PlanetScope to capture urban flooding in 14 cities 
@@ -93,6 +100,7 @@ layout: default
       <img src="images/THP.png" alt="THP image">
       <p><em> A sample from our training dataset built using Labelbox. Source: Planet. </em></p>
       <p>Check out my talk on <a href="https://www.youtube.com/watch?v=mQQx-sbn9N4&ab_channel=IEEEGRSS">Youtube!</a></p>
+      <a href="#research_list">top</a>
   </section>
 
 
@@ -106,6 +114,7 @@ layout: default
     </p>
     <img src="images/LCLUC.jpg" alt="LCLUC image">
     <p> <em> Markers of narco-trafficking in Central America. Sources: Planet and ESA. </em> </p>
+    <a href="#research_list">top</a>
   </section>
 
   <section id="global-surface-water">
@@ -116,6 +125,7 @@ layout: default
       deep learning model with a focus on sampling rather than the method with the help of the impressive SWORD dataset.</p>
     <img src="images/FZ.png" alt="FZ image">
     <p><em>Our 90 globally distributed samples overlayed on the different biomes. Source: World Wildlife Fund (WWF) Global Ecoregions Map</em></p>
+    <a href="#research_list">top</a>
   </section>
 
 
@@ -128,6 +138,7 @@ layout: default
       flooding. </p>
     <img src="images/PCF.jpg" alt="PCF image">
     <p><em>Identifying regions where it flooded, but there weren't any road closures for safety. Source: Planet.</em></p>
+    <a href="#research_list">top</a>
   </section>
 
 
@@ -137,10 +148,8 @@ layout: default
     <p>We are assessing the impact of activties performed by local NGOs through the programs funded by BHA that bring about behavorial and landscape changes.
       Designing a remote sensing based pilot study to measure the impact.
     </p>
+    <a href="#research_list">top</a>
   </section>
-
-
-
 
 
 <section id="tools">
@@ -162,6 +171,7 @@ layout: default
     High-Performance Computing (HPC) from UofA, and occasionally Alaska Science Facility's OpenScienceLab.</p>
   
   <p><strong>Image Annotation Tools:</strong> I spent some time annotating images using Labelbox and NASA ImageLabeler. Labelbox has more features but NASA ImageLabeler is quite impressive in itself. </p>
+  <a href="#table-of-contents">top</a>
 
 </section>
 
@@ -174,6 +184,7 @@ layout: default
     <li>Please read their blogs, especially the ones on their geospatial workflows: <a href="https://developmentseed.org/">https://developmentseed.org/</a></li>
     <li>Everyone knows this one. For GEE with python: <a href="https://geemap.org/">geemap by Qiusheng Wu</a></li>
   </ul>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="publications">
@@ -181,6 +192,7 @@ layout: default
   <p>Mukherjee, R., &amp; Liu, D. (2021). Downscaling MODIS spectral bands using deep learning. GIScience &amp; Remote Sensing, 58(8), 1300-1315.</p>
   <p>Patel, N., &amp; Mukherjee, R. (2015). Extraction of impervious features from spectral indices using artificial neural network. Arabian Journal of Geosciences, 8, 3729-3741.</p>
   <p>Giezendanner, J., Mukherjee, R., Purri, M., Thomas, M., Mauerman, M., Islam, A. K. M., &amp; Tellman, B. (2023). Inferring the past: a combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 2154-2164).</p>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="presentations">
@@ -194,6 +206,7 @@ layout: default
     <li>"Toward mapping flood impacts in urban areas using multi-sensor satellite data fusion" - AGU Fall Meeting, 2021</li>
     <li>"High resolution imagery to train and validate deep learning models of inundation extent for multiple satellite sensors" - AGU Fall Meeting, 2021</li>
   </ul>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="contributions">
@@ -205,6 +218,7 @@ layout: default
     <li>Setup coding and GitHub upload rules</li>
     <li>Educating grad students with minimal coding background in Machine Learning/Deep Learning</li>
   </ul>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="proposals">
@@ -213,11 +227,13 @@ layout: default
     <li>Wrote a third of a proposal that secured funding from USAID’s Bureau for Humanitarian Assistance (BHA).</li>
     <li>Wrote a proposal for NASA's use of Capella SAR data which was rejected.</li>
   </ul>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="dissertation">
   <h2>Dissertation</h2>
   <p>“Improving Satellite Data Quality and Availability: A Deep learning Approach”. Research involves the improvement in quality and availability of existing satellite image products using deep learning models. Keywords - MODIS, Sentinel-2, Landsat 8, deep residual encoder decoder network, generative adversarial network, satellite image fusion.</p>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="awards">
@@ -227,6 +243,7 @@ layout: default
     <li>Cognizant Internal Awards - Individual and Team awards for reduction of operation cost through the development of Automation Tools, Cognizant Technology Solutions, 2014</li>
     <li>First Place in Academics, M.Sc. Geo-Informatics - Birla Institute of Technology, Mesra, India, 2011-2013</li>
   </ul>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="teaching">
@@ -256,7 +273,7 @@ layout: default
     He was extremely supportive especially considering the circumstances of this class being thrust online and so much more
     understanding which made this class so much better than XXXX" </em>
   </p>
-
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="education">
@@ -271,6 +288,7 @@ layout: default
     <li><strong>B.Sc., Computer Science</strong>, St. Xavier's College, Kolkata, India (2008 - 2011)<br>
       <em>Thesis: "A Social Networking Website for Academics (SharEd)"</em></li>
   </ul>
+  <a href="#table-of-contents">top</a>
 </section>
 
 <section id="industry">
@@ -281,6 +299,7 @@ layout: default
     I also developed a webiste as an interface for ServiceNow ticket processing using C# and ASP dotNET. 
     Felt bored during my time there and decided to get a PhD.  
   </p>
+  <a href="#table-of-contents">top</a>
 </section>
 
 
@@ -290,6 +309,7 @@ layout: default
   <img src="images/CR.png" alt="CR image">
   <p>Left: All collected road validation points in the Osa Peninsula (Costa Rica), Roads made of Asphalt and gravel from the nearby rivers 
     (that is why so many misclassifications between them!), me (happy) in Corcovado National Park, and (right) roads along oil palm plantations.</p>
+  <a href="#table-of-contents">top</a>
 </section>
 
 
@@ -304,6 +324,7 @@ layout: default
     <li>Geography Department Spring Panel Committee (2018). I organized a panel on Environmental Data Justice, involving professionals from the local community.</li>
   </ul>
   <p> I enjoyed doing non-academic tasks for two main reasons: learning more about administration and advocating for mental health for grad students.</p>
+  <a href="#table-of-contents">top</a>
 </section>
 
 
