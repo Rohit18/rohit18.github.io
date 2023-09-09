@@ -33,11 +33,11 @@ layout: default
 <section id="custom-section" style="display: flex;">
   <div style="flex: 1;">
     <p>I am a postdoctoral researcher specializing in the application of machine learning and deep learning techniques 
-      in geospatial analysis. Currently. working on projects related to urban flooding, informal road detection in Central America, 
-      global surface water detection, and assessing the impact of humanitarian assistance programs. 
+      in geospatial analysis. Currently, I am working on projects related to urban flooding, informal road detection in Central America, 
+      global surface water detection, global river width measurements, and assessing the impact of humanitarian assistance programs on behavior and landscape. 
       I enjoy extracting meaningful information from satellite imagery with a focus on the 
       drivers of climate change and their impacts.
-      I am working at the <a href="https://beth-tellman.github.io/"> social [pixel] lab </a> (University of Arizona) with the simply brilliant Dr. Beth Tellman.</p>
+      I am working at the <a href="https://beth-tellman.github.io/"> social [pixel] lab </a> (University of Arizona) with Dr. Beth Tellman.</p>
   </div>
   <div style="flex: 1;">
     <img src="images/me.jpg" alt="Image description">
@@ -98,6 +98,7 @@ layout: default
       <li><a href="#global-surface-water">Global Surface Water Mapping</a></li>
       <li><a href="#desert-floods">Desert Floods in Arizona</a></li>
       <li><a href="#usaids">Assessing Intervention Programs by USAID</a></li>
+      <li><a href="#otherProj">Other Projects</a></li>
     </ul>
   </li>
   <li><a href="#tools">Tools</a></li>
@@ -120,24 +121,24 @@ layout: default
  
   <section id="urban-flooding">
     <h2>Urban Flooding</h2>
-    <p> A NASA Terrestrial Hydrology Project.</p>
+    <p> A NASA Terrestrial Hydrology Project. PI: Beth Tellman.</p>
     <p>We are trying to address issues related to urban flooding because it is more difficult 
       to map these floods due to the complex and heterogeneous urban landscape. For this purpose, we built a 
       hand-labeled dataset using PlanetScope to capture urban flooding in 14 cities 
-      across the world called the <em>Urban Flood Dataset</em> (maybe we will come up with a better name for it). </p>
+      across the world called the <em>Urban Flood Observations</em> (UFO!). </p>
       <img src="images/THP.png" alt="THP image">
       <p><em> A sample from our training dataset built using Labelbox. Source: Planet. </em></p>
-      <p>Check out my talk on <a href="https://www.youtube.com/watch?v=mQQx-sbn9N4&ab_channel=IEEEGRSS">Youtube!</a></p>
+      <p>My talk on <a href="https://www.youtube.com/watch?v=mQQx-sbn9N4&ab_channel=IEEEGRSS">Youtube!</a></p>
       <a href="#top">top</a>
   </section>
 
 
   <section id="informal-roads">
     <h2>Informal Roads in Central America</h2>
-    <p>A NASA LCLUC Project. Working with and learning a lot from Nicholas Magliocca, Matthew Fagan, Steven Sesnie, Erik Nielsen, Jennifer Devine, and Kendra McSweeney.</p>
+    <p>A NASA LCLUC Project. Working with and learning a lot from Beth Tellman, Nicholas Magliocca, Matthew Fagan, Steven Sesnie, Erik Nielsen, Jennifer Devine, and Kendra McSweeney.</p>
     <p>We study how narco-trafficking drives Central American deforestation, using informal roads as indicators. 
       We created a locally-trained deep learning model that outperforms Microsoft and OSM in identifying roads. 
-      To examine road growth since 2001, we're using Landsat 7
+      To analyze the growth of roads since 2001, we are utilizing Landsat 7
       and combining other data sources to build a counter-factual model assessing narco-trafficking's impact on deforestation.
     </p>
     <img src="images/LCLUC.jpg" alt="LCLUC image">
@@ -147,10 +148,11 @@ layout: default
 
   <section id="global-surface-water">
     <h2>Global Surface Water Mapping</h2>
-    <p>A NASA ACCESS Project. Enjoying working with Fritz Pollicelli. </p>
+    <p>A NASA ACCESS Project. Working with Fritz Pollicelli and Beth Tellman. </p>
     <p>We need validation datasets to evaluate the hundreds (thousands?) of surface water mapping methods using satellite imagery. 
-      We built a globally sampled hand-labeled dataset using PlanetScope imagery. Currently building yet another 
-      deep learning model with a focus on sampling rather than the method with the help of the impressive SWORD dataset.</p>
+      We built a globally sampled hand-labeled dataset using PlanetScope imagery. We built a Sentinel-1 model trained on Dynamic World-based weak labels data that 
+      outperforms NASA's IMPACT flood dataset. We are now applying this model to extract river width globally on-demand using Sentinel-1 data for all river reaches
+      from the impressive SWORD dataset. We are manually calculating effective river width using PlanetScope and then verifying using SWOT data.</p> 
     <img src="images/FZ.png" alt="FZ image">
     <p><em>Our 90 globally distributed samples overlayed on the different biomes. Source: World Wildlife Fund (WWF) Global Ecoregions Map</em></p>
     <a href="#top">top</a>
@@ -172,36 +174,41 @@ layout: default
 
   <section id="usaids">
     <h2>Assessing Intervention Programs by USAID</h2>
-    <p>A USAID’s Bureau for Humanitarian Assistance (BHA). Working with UoArizona's Arizona Institute for Resilience (AIR), Economics, Sociology Departments. </p>
-    <p>We are assessing the impact of activties performed by local NGOs through the programs funded by BHA that bring about behavorial and landscape changes.
-      Designing a remote sensing based pilot study to measure the impact.
+    <p>Project funded by USAID’s Bureau for Humanitarian Assistance (BHA). Working with University of Arizona's Institute for Resilience (AIR), Economics, Sociology Departments. </p>
+    <p>We are working with BHA for developing metrics to assess the impact of projects funded by them through local NGOs that aims to bring about behavorial and landscape changes especially due to disasters.
+      We are focusing on capturing landscape changes using satellite remote sensing, in order to provide BHA tools to assess the impact of their programs. </p>
     </p>
+    <a href="#top">top</a>
+  </section>
+
+  <section id="otherProj">
+    <h2>Other Projects I am a part of:</h2>
+    <p><b>NASA CSDA </b> Funded Project on developing a global high resolution hand labeled flood extent mapping training and validation dataset called FloodPlanet. <a href="https://docs.google.com/presentation/d/1EEMBACsDTm9SlM-o443m-UxoHI3rvlrT/edit?usp=sharing&ouid=109501448293982423476&rtpof=true&sd=true"> Link to Presentation</a>.</p>
+    <p><b>NASA CSDA </b> Funded Project on Evaluating Blacksky where I am a Co-Investigator. </p>
     <a href="#top">top</a>
   </section>
 
 
 
-
-
 <section id="tools">
   <h2>Tools</h2>
-  <p><strong>Geospatial Technologies:</strong> I work with geospatial python libraries like rasterio, geopandas, 
+  <p><strong>Geospatial Technologies:</strong> I work with geospatial python libraries like rasterio, geopandas, shapely,
     and geemap all the time. GDAL is my favorite (huge shout out to <a href="https://courses.spatialthoughts.com/gdal-tools.html">Spatial Thoughts by Ujaval Gandhi</a>). 
-    When I need to visualize, I use QGIS, Google Earth Engine, and Microsoft Planetary. To download spatial data, I use GEE, <a href="https://www.earthdata.nasa.gov/eosdis/science-system-description/eosdis-components/cmr">NASA CMR</a>, and <a href="https://hyp3-docs.asf.alaska.edu/using/api/">Hyp3</a>
+    When I need to visualize, I mostly use QGIS and Google Earth Engine. To download spatial data, I use GEE, <a href="https://www.earthdata.nasa.gov/eosdis/science-system-description/eosdis-components/cmr">NASA CMR</a>, and <a href="https://hyp3-docs.asf.alaska.edu/using/api/">Hyp3</a>
     Working with geospatial data means that I have to troubleshoot with almost every new dataset I work with, 
-    but I have those in our lab's private repos for now. Nothing works out of the box so I have incredible respect for folks who build products with geospatial data.
+    but I have those in our lab's private repos for now. Nothing works out of the box so I have incredible respect for folks who build products with geospatial data. 
   </p>
 
-  <p><strong>Machine Learning Tools:</strong> I learned deep learning using Keras and Tensforflow (with help from Andrew Ng 
+  <p><strong>Machine Learning Tools:</strong> I learned deep learning using Keras and TensorFlow (with help from Andrew Ng 
     and Andrej Karpathy's materials) many years ago, but <a href="https://docs.fast.ai/">Fastai</a> 
-    with Pytorch quickly became my preferred library due to their simpicity. Thank you, Jeremy Howard and Rachel Thomas.</p>
+    with Pytorch quickly became my preferred library due to their simplicity. Thank you, Jeremy Howard and Rachel Thomas.</p>
 
-  <p><strong>Development Environments:</strong> I love coding with vscode (with the help of Copilot-X, which helps me try new things) and sometimes use Jupyter Notebooks (mostly to communicate findigs). </p>
+  <p><strong>Development Environments:</strong> I love coding with vscode (with the help of Copilot-X and ChatGPT). AI tools improved my efficiency by a significant amount and is making me promise more work in even less time (not good). For sharing code I use Jupyter Notebooks (and Google Colab too, but it is getting costly). </p>
 
   <p><strong>Computational Platforms:</strong> When training larger models, I use Google Colab (initial trial runs), Lambdabox (our lab has 2 3080s), 
-    High-Performance Computing (HPC) from UofA, and occasionally Alaska Science Facility's OpenScienceLab.</p>
+    High-Performance Computing (HPC) from UofA, and Alaska Science Facility's OpenSARLab (specifically for Sentinel-1 processing).</p>
   
-  <p><strong>Image Annotation Tools:</strong> I spent some time annotating images using Labelbox and NASA ImageLabeler. Labelbox has more features but NASA ImageLabeler is quite impressive in itself. </p>
+  <p><strong>Image Annotation Tools:</strong> I spent some time annotating images using <a href="https://labelbox.com/">Labelbox</a> and <a href="https://impact.earthdata.nasa.gov/labeler/">NASA ImageLabeler</a>. Labelbox has more features but NASA ImageLabeler is quite impressive in itself. </p>
   <a href="#top">top</a>
 </section>
 
@@ -209,8 +216,8 @@ layout: default
   <h2>Resources I highly recommend</h2>
   <ul>
     <li>If you want a crash course on how to work with spatial data, raster and vector: <a href="https://carpentries-incubator.github.io/geospatial-python/">https://carpentries-incubator.github.io/geospatial-python/</a></li>
-    <li>If you want to learn about GDAL, follow along with the GDAL documentation: <a href="https://spatialthoughts.com/courses/mastering-gdal-tools/">https://spatialthoughts.com/courses/mastering-gdal-tools/</a></li>
-    <li>If you want to get started with deep learning: <a href="https://course.fast.ai/">https://course.fast.ai/</a> and if you want to go one step further:  <a href="https://walkwithfastai.com/">https://walkwithfastai.com/</a></li>
+    <li>If you want to learn about GDAL, follow along with the GDAL tutorial: <a href="https://spatialthoughts.com/courses/mastering-gdal-tools/">https://spatialthoughts.com/courses/mastering-gdal-tools/</a></li>
+    <li>If you want to get started with deep learning: <a href="https://course.fast.ai/">https://course.fast.ai/</a> and if you want to go one step further:  <a href="https://walkwithfastai.com/">https://walkwithfastai.com/</a>. Jeremy Howard has a Machine Learning course, Andrew Ng's course is invaluable too.</li>
     <li>Please read their blogs, especially the ones on their geospatial workflows: <a href="https://developmentseed.org/">https://developmentseed.org/</a></li>
     <li>Everyone knows this one. For GEE with python: <a href="https://geemap.org/">geemap by Qiusheng Wu</a></li>
   </ul>
@@ -224,8 +231,10 @@ layout: default
     <li><strong>Mukherjee, R.</strong>, &amp; Liu, D. (2021). Downscaling MODIS spectral bands using deep learning. GIScience &amp; Remote Sensing, 58(8), 1300-1315.</li>
     <li>Patel, N., &amp; <strong>Mukherjee, R.</strong> (2015). Extraction of impervious features from spectral indices using artificial neural network. Arabian Journal of Geosciences, 8, 3729-3741.</li>
     <li><strong>Mukherjee, R.</strong>, Policelli, F., Wang, R., Tellman, B., Sharma, P., Zhang, Z., &amp; Giezendanner, J. (2023). A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps. Earth System Science Data Discussions, 2023, 1-18.</li>
-    <li><strong>Mukherjee, R.</strong>, Friedrich, H., Tellman, B., Giezendanner, J., Zhang, Z., &amp; Islam, A. (n. d.). Urban Flood Observations (UFO): A Global High-Resolution Hand-labeled training and validation dataset. Manuscript in preparation.</li>
+    <li><strong>Mukherjee, R.</strong>, Friedrich, H., Tellman, B., Giezendanner, J., Zhang, Z., Islam, A.,  Lall, U; &amp; Lakshmi, V. (n. d.). Urban Flood Observations (UFO): A Global High-Resolution Hand-labeled training and validation dataset. Manuscript in preparation for Scientific Data.</li>
     <li><strong>Mukherjee, R.</strong>, Tellman, B., Arellano-Thompson, E., Fagan, M., Saad, F., &amp; Maggliocca, N. (n. d.). Monitoring growth in road infrastructure using time series Landsat 7 data with deep learning from 2001 to 2021. Manuscript in preparation.</li>
+    <li><strong>Mukherjee, R.</strong>, &amp; Liu, D. (n d.). Translating Landsat 8 spectral bands to Sentinel-2 like Red Edge bands using Generative Adversarial Networks. Manuscript submitted to Remote Sensing. </li>
+    <li>Zhang Z., Giezendanner J., <strong>Mukherjee, R.</strong>, Tellman, B., Purri, M., Islam, A., Lall, U; &amp; Barnard, K. Multi-Sensor Integration for Enhanced Global Flood Monitoring using FloodPlanet - A Hand-Labeled Dataset of PlanetScope, Sentinel-1, Sentinel-2, and Landsat 8 Imagery. Submitting to Neurips Workshop HADL (2023).</li>
   </ul>
   <a href="#top">top</a>
 </section>
@@ -259,7 +268,7 @@ layout: default
 <section id="lab-contributions">
   <h2>Lab Contributions</h2>
   <ul>
-    <li>Currently providing mentorship to four graduate students.</li>
+    <li>Currently providing mentorship to two graduate students. Previously provided mentorship to two other graduate students. </li>
     <li>Developed the lab's computational infrastructure to support various research projects.</li>
     <li>Put together a learning plan to help lab members apply deep learning in geospatial scenarios.</li>
     <li>Implemented coding standards and GitHub use rules to maintain version control and improve collaboration within the lab.</li>
@@ -273,6 +282,7 @@ layout: default
   <ul>
     <li>Co-wrote a successful proposal titled - "Enhancing the Evidence for Humanitarian Action (EEHA) in the Face of Climate Change" with Arizona Institute for Resilience funded by USAID's BHA.</li>
     <li>Wrote a proposal for NASA's use of Capella SAR data, which unfortunately was not selected for funding.</li>
+    <li>Working on another one Fall 23!</li>
   </ul>
   <a href="#top">top</a>
 </section>
@@ -282,7 +292,8 @@ layout: default
   <h2>PhD Dissertation</h2>
   <p><em><b>"Improving Satellite Data Quality and Availability: A Deep Learning Approach"</b></em></p>
 
-  <p>This research involved improving the quality and availability of existing satellite image products using deep learning models. The study focused on utilizing techniques such as <b>deep residual encoder-decoder networks</b> and <b>generative adversarial networks</b> to enhance satellite images from sources like <b>MODIS</b>, <b>Sentinel-2</b>, and <b>Landsat 8</b>. The work is aimed to advance <b>satellite image fusion methodologies</b> for various applications.</p>
+  <p>This research involved improving the quality (spatial, spectral resolutions) and availability (temporal resolution) of existing satellite image products using deep learning models. The study focused on utilizing techniques such as <b>deep residual encoder-decoder networks</b> and <b>generative adversarial networks</b> to enhance satellite images from sources like <b>MODIS</b>, <b>Sentinel-2</b>, and <b>Landsat 8</b>. The work is aimed to advance <b>satellite image fusion methodologies</b> for various applications.</p> 
+  <p>Investigated several aspects of applying convolution networks and generative adversarial learning on satellite imagery. Asked and answered questions on optimal loss functions including adversarial learning. Demonstrated the advantages of fine tuning on your region of interest among several other insights! Spending hours deep learning training models (and failing most experiments) is at least helping me save time now.</p>
 
   <p><a href="https://docs.google.com/presentation/d/1llPJddxodo1s0_afQSn4HpJ9d_PmIksS/edit?usp=sharing&ouid=105622172800104875164&rtpof=true&sd=true">Link to slides.</a></p>
   <a href="#top">top</a>
