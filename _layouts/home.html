@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Postdoctoral researcher specializing in machine learning and geospatial analysis.">
+  <meta name="keywords" content="Machine Learning, Deep Learning, Geospatial Analysis, Remote Sensing">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+</head>
+
+
 <header>
 {% if site.theme_config.show_navbar == true %}
   {% include horizontal_list.html collection=site.data.home.navbar_entries %}
@@ -28,11 +37,31 @@ layout: default
       font-size: 14px;
     }
   }
+
+  .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.flex-item {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 </style>
 
-<section id="custom-section" style="display: flex;">
+<!-- <section id="custom-section" style="display: flex;">
   <div style="flex: 1;">
-    <p>I am a postdoctoral researcher specializing in the application of machine learning and deep learning techniques 
+    <p>I am a postdoctoral researcher at Pacific Northwest National Laboratory, working on improving urban representation in Climate Models. 
+      I specialize in the application of machine learning and deep learning techniques 
       in geospatial analysis. Currently, I am working on projects related to urban flooding, informal road detection in Central America, 
       global surface water detection, global river width measurements, and assessing the impact of humanitarian assistance programs on behavior and landscape. 
       I enjoy extracting meaningful information from satellite imagery with a focus on the 
@@ -42,7 +71,25 @@ layout: default
   <div style="flex: 1;">
     <img src="images/me.jpg" alt="Image description">
   </div>
+</section> -->
+
+<!-- Introduction Section -->
+<section id="custom-section" class="flex-container">
+  <div class="flex-item">
+    <p>
+      Postdoctoral researcher at Pacific Northwest National Laboratory (PNNL)'s ACES Division.<br>
+      Primary work on urban flooding and vegetation.<br>
+      Satellite imagery processing using deep learning and Google Earth Engine.<br>
+      Working with TC Chakraborty to improve urban representation in Climate Models using satellite imagery.<br>
+      Flood related work with Dr. Beth Tellman at University of Arizona's Social [Pixel] Lab.<br>
+      Surface water mapping with Dr. Fritz Pollicelli at NASA Goddard.
+    </p>
+  </div>
+  <div class="flex-item">
+    <img src="images/me.jpg" alt="Portrait of Rohit Mukherjee, a postdoctoral researcher at PNNL" loading="lazy">
+  </div>
 </section>
+
 
 
 <!-- <div class="container" style="display:flex;" id="research_list">

@@ -1,18 +1,18 @@
 navbar_entries:
-  - title: twitter
-    url: https://twitter.com/RohitMukherjee9
-
-  - title: github
-    url: https://github.com/Rohit18
-
-  - title: social [pixel] lab
-    url: https://beth-tellman.github.io/
+  - title: bluesky
+    url: https://bsky.app/profile/rohitmukherjee.space
 
   - title: google scholar
     url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
 
   - title: linkedin
     url: https://www.linkedin.com/in/rohitmukherjee/
+
+  - title: github
+    url: https://github.com/Rohit18
+
+  - title: google scholar
+    url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
   
   - title: cv
     url: https://drive.google.com/file/d/1upv-EihShPHfDFrh_S9kC7FQcZvDIHUg/view?usp=sharing
@@ -78,20 +78,20 @@ old_project_entries:
 
 
 footer_entries:
-  - title: twitter
-    url: https://twitter.com/RohitMukherjee9
+  - title: bluesky
+    url: https://bsky.app/profile/rohitmukherjee.space
+
+  - title: google scholar
+    url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
+
+  - title: linkedin
+    url: https://www.linkedin.com/in/rohitmukherjee/
 
   - title: github
     url: https://github.com/Rohit18
 
-  - title: social [pixel] lab
-    url: https://beth-tellman.github.io/
-
   - title: google scholar
     url: https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en
-  
-  - title: linkedin
-    url: https://www.linkedin.com/in/rohitmukherjee/
   
   - title: cv
     url: https://drive.google.com/file/d/1upv-EihShPHfDFrh_S9kC7FQcZvDIHUg/view?usp=sharing
