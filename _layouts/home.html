@@ -2,61 +2,19 @@
 layout: default
 ---
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Postdoctoral researcher specializing in machine learning and geospatial analysis.">
-  <meta name="keywords" content="Machine Learning, Deep Learning, Geospatial Analysis, Remote Sensing">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
-</head>
-
-
 <header>
-{% if site.theme_config.show_navbar == true %}
+{% if site.site_options.show_navbar == true %}
   {% include horizontal_list.html collection=site.data.home.navbar_entries %}
   <div class="dashed"></div>
 {% endif %}
 
   <h1>{{ site.title }}</h1>
-  {% if site.theme_config.show_description == true %}
+  {% if site.site_options.show_description == true %}
     <p>{{ site.description }}</p>
   {% endif %}
 </header>
 
 {{ content }}
-
-<style>
-  /* Default styles */
-  p, ul, ol {
-    font-size: 16px;
-  }
-  
-  /* Media query for screens smaller than 768px */
-  @media (max-width: 767px) {
-    p, ul, ol {
-      font-size: 14px;
-    }
-  }
-
-  .flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.flex-item {
-  flex: 1;
-  margin: 10px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 767px) {
-  .flex-container {
-    flex-direction: column;
-  }
-}
-</style>
 
 <!-- <section id="custom-section" style="display: flex;">
   <div style="flex: 1;">
@@ -86,7 +44,7 @@ layout: default
     </p>
   </div>
   <div class="flex-item">
-    <img src="images/me.jpg" alt="Portrait of Rohit Mukherjee, a postdoctoral researcher at PNNL" loading="lazy">
+    <img class="profile-image" src="images/me.jpg" alt="Portrait of Rohit Mukherjee, a postdoctoral researcher at PNNL" loading="lazy">
   </div>
 </section>
 
@@ -274,14 +232,14 @@ layout: default
 <section id="publications">
   <h2><strong>Publications</strong></h2>
   <ul>
-    <li>Giezendanner, J., <strong>Mukherjee, R.</strong>, Purri, M., Thomas, M., Mauerman, M., Islam, A. K. M., &amp; Tellman, B. (2023). Inferring the past: a combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 2154-2164).</li>
-    <li><strong>Mukherjee, R.</strong>, &amp; Liu, D. (2021). Downscaling MODIS spectral bands using deep learning. GIScience &amp; Remote Sensing, 58(8), 1300-1315.</li>
-    <li>Patel, N., &amp; <strong>Mukherjee, R.</strong> (2015). Extraction of impervious features from spectral indices using artificial neural network. Arabian Journal of Geosciences, 8, 3729-3741.</li>
-    <li><strong>Mukherjee, R.</strong>, Policelli, F., Wang, R., Tellman, B., Sharma, P., Zhang, Z., &amp; Giezendanner, J. (2023). A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps. Earth System Science Data Discussions, 2023, 1-18.</li>
-    <li><strong>Mukherjee, R.</strong>, Friedrich, H., Tellman, B., Giezendanner, J., Zhang, Z., Islam, A.,  Lall, U; &amp; Lakshmi, V. (n. d.). Urban Flood Observations (UFO): A Global High-Resolution Hand-labeled training and validation dataset. Manuscript in preparation for Scientific Data.</li>
-    <li><strong>Mukherjee, R.</strong>, Tellman, B., Arellano-Thompson, E., Fagan, M., Saad, F., &amp; Maggliocca, N. (n. d.). Monitoring growth in road infrastructure using time series Landsat 7 data with deep learning from 2001 to 2021. Manuscript in preparation.</li>
-    <li><strong>Mukherjee, R.</strong>, &amp; Liu, D. (n d.). Translating Landsat 8 spectral bands to Sentinel-2 like Red Edge bands using Generative Adversarial Networks. Manuscript submitted to Remote Sensing. </li>
-    <li>Zhang Z., Giezendanner J., <strong>Mukherjee, R.</strong>, Tellman, B., Purri, M., Islam, A., Lall, U; &amp; Barnard, K. Multi-Sensor Integration for Enhanced Global Flood Monitoring using FloodPlanet - A Hand-Labeled Dataset of PlanetScope, Sentinel-1, Sentinel-2, and Landsat 8 Imagery. Submitting to Neurips Workshop HADL (2023).</li>
+    <li>Patel, Nilanchal; <strong>Mukherjee, Rohit</strong>. (2015). Extraction of impervious features from spectral indices using artificial neural network. <em>Arabian Journal of Geosciences</em>, 8(6), 3729-3741.</li>
+    <li><strong>Mukherjee, Rohit</strong>; Liu, Desheng. (2021). Downscaling MODIS spectral bands using deep learning. <em>GIScience &amp; Remote Sensing</em>, 58(8), 1300-1315.</li>
+    <li>Giezendanner, Jonathan; <strong>Mukherjee, Rohit</strong>; Purri, Matthew; Thomas, Mitchell; Mauerman, Max; Islam, AKMl; Tellman, Beth. (2023). Inferring the past: A combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping. <em>Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</em>, 2155-2165.</li>
+    <li><strong>Mukherjee, Rohit</strong>; Policelli, Frederick; Wang, Ruixue; Arellano-Thompson, Elise; Tellman, Beth; Sharma, Prashanti; Zhang, Zhijie; Giezendanner, Jonathan. (2024). A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps. <em>Earth System Science Data</em>, 16(9), 4311-4323.</li>
+    <li><strong>Mukherjee, Rohit</strong>; Liu, Desheng. (2023). Spatial and spectral translation of Landsat 8 to Sentinel-2 using conditional generative adversarial networks. <em>Remote Sensing</em>, 15(23), 5502.</li>
+    <li>Zhang, Zhijie; Giezendanner, Jonathan; <strong>Mukherjee, Rohit</strong>; Tellman, Beth; Melancon, Alexander; Purri, Matt; Gurung, Iksha; Lall, Upmanu; Barnard, Kobus; Molthan, Andrew. (2025). Assessing inundation semantic segmentation models trained on high-versus low-resolution labels using floodplanet, a manually labeled multi-sourced high-resolution flood dataset. <em>Journal of Remote Sensing</em>, 5, 0575.</li>
+    <li>Magliocca, Nicholas R; Sink, Carter D; Devine, Jennifer A; Fagan, Matthew E; Aguilar-Gonzalez, Bernardo; McSweeney, Kendra; <strong>Mukherjee, Rohit</strong>; Nielsen, Erik A; Sesnie, Steven E; Tellman, Beth. (2025). A data pedigree system to support geospatial analyses of human-environment interactions in data poor contexts. <em>International Journal of Geographical Information Science</em>, 39(6), 1223-1246.</li>
+    <li>Diana W. Githu; Zack Guido; Erica A. Goto; Corrie Hannah; James Kamunge; Eligah Mutanda; Tim J. Finan; Padraic Finan; Karyn M. Fox; Suzanne Nelson; Prashanti Sharma; <strong>Rohit Mukherjee</strong>. (2026). Humanitarian assistance and its expected behavior and land use changes: Insights from Bangladesh and Kenya. <em>International Journal of Disaster Risk Reduction</em>, 106036.</li>
   </ul>
   <a href="#top">top</a>
 </section>
@@ -441,7 +399,7 @@ layout: default
 </section>
 
 
-{% if site.theme_config.show_footer == true %}
+{% if site.site_options.show_footer == true %}
   <footer>
     <div class="dashed"></div>
     {% include horizontal_list.html collection=site.data.home.footer_entries %}

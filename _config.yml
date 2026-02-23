@@ -1,56 +1,20 @@
 title: Rohit Mukherjee, Ph.D.
 author: Rohit Mukherjee
-url: www.rohitmukherjee.space # root address of the site
-description: > # description of the site (multiple lines allowed)
-  I am a postdoctoral researcher specializing in the application of machine learning and deep learning techniques in geospatial analysis. I work on 
-  projects related to urban flooding, informal road detection in Central America, global surface water detection, and assessing the impact of humanitarian
-  assistance programs.
-  
-  I enjoy working with satellite imagery and extract meaningful information focusing on the drivers and impact of climate change.
-
-  I am currently working at the social [pixel] lab at the University of Arizona with Dr. Beth Tellman.
+url: www.rohitmukherjee.space
+description: >
+  I am a postdoctoral researcher specializing in machine learning and deep learning
+  for geospatial analysis, with projects spanning urban flooding, informal road
+  detection, and global surface water mapping.
 
 permalink: /:slug
-
-favicon: "./logo.png" # relative path to site's favicon
-
-twitter:
-    username: rohitmukherjee9 # update or delete this
-    card: summary_large_image
-
-#theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
-remote_theme: abhinavs/moonwalk
-
-theme_config:
-  appearance: "light" # can be "light", "dark" or "auto"
-  appearance_toggle: false # if appearance can be switched by user
-  back_home_text: "home" # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
-  show_description: false # show blog description
-  show_navbar: true # show horizontal navbar
-  show_footer: true # show footer links in home page,add in _data/home.yml
-  show_copyright: true # show copyright notice in footer
-  # following keys are using to create home layout
-  show_projects: true # show projects as cards, add in _data/home.yml
-  show_blog: true # show blog posts added in _posts
-  show_old_projects: true # show old projects as cards, add in _data/home.yml
-  show_misc_list: true # show generic vertical list for misc details, add _data/home.yml
-  # options for "home" page
-  home:
-    title_projects: Research Projects
-    title_misc_list: Current Projects
-    title_old_projects: Previous Projects
-    title_blog: Blog
-    
-
-soopr:
-  publish_token: "" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+favicon: "./logo.png"
 
 highlighter: rouge
 
 sass:
   style: :compressed
 
-plugins:
-  - jekyll-feed
-  - jekyll-soopr-seo-tag
+site_options:
+  show_description: false
+  show_navbar: true
+  show_footer: true
