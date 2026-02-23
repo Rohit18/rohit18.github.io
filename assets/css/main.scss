@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
 
 :root {
-  --bg: #f6f4f1;
-  --text: #1f1d1a;
+  --bg: #F9EBDE;
+  --text: #815854;
   --muted: #6f6962;
-  --link: #1c49b8;
+  --link: #815854;
   --accent-border: #dad3cb;
 }
 
@@ -56,7 +56,8 @@ ol {
 
 a {
   color: var(--link);
-  text-underline-offset: 0.15em;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 img {
