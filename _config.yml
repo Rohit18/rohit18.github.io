@@ -8,6 +8,7 @@ description: >
 
 permalink: /:slug
 favicon: "./logo.png"
+favicon_emoji: "🌎"
 
 highlighter: rouge
 

@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description | strip_newlines | strip | escape }}">
-    <link rel="icon" type="image/x-icon" href="/{{ site.favicon | relative_url }}">
+    {% if site.favicon_emoji %}
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>{{ site.favicon_emoji }}</text></svg>">
+    {% endif %}
+    {% if site.favicon %}
+    <link rel="alternate icon" type="image/x-icon" href="/{{ site.favicon | relative_url }}">
+    {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body id="top">
