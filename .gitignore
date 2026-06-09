@@ -6,3 +6,7 @@
 .sass-cache
 _site
 vendor/bundle
+
+# Local review tool (not for the live site)
+review.html
+review-decisions.json
