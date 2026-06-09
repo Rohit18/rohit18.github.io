@@ -8,7 +8,8 @@ navbar_entries:
   - title: github
     url: https://github.com/Rohit18
   - title: cv
-    url: https://drive.google.com/file/d/1upv-EihShPHfDFrh_S9kC7FQcZvDIHUg/view?usp=sharing
+    url: /assets/RohitMukherjeeCV.pdf
+    new_tab: true
 
 footer_entries:
   - title: bluesky
@@ -20,4 +21,5 @@ footer_entries:
   - title: github
     url: https://github.com/Rohit18
   - title: cv
-    url: https://drive.google.com/file/d/1upv-EihShPHfDFrh_S9kC7FQcZvDIHUg/view?usp=sharing
+    url: /assets/RohitMukherjeeCV.pdf
+    new_tab: true
