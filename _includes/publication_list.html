@@ -1,0 +1,6 @@
+<ol class="publication-list">
+{% assign publications = site.data.publications | where: "group", include.group %}
+{% for publication in publications %}
+  <li>{{ publication.citation }}</li>
+{% endfor %}
+</ol>
