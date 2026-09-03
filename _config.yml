@@ -1,10 +1,18 @@
 title: Rohit Mukherjee, Ph.D.
 author: Rohit Mukherjee
-url: www.rohitmukherjee.space
+url: https://rohitmukherjee.space
 description: >
-  I am a postdoctoral researcher specializing in machine learning and deep learning
-  for geospatial analysis, with projects spanning urban flooding, informal road
-  detection, and global surface water mapping.
+  Rohit Mukherjee develops machine learning methods and satellite datasets for
+  flooding, surface water, urban vegetation, and climate research at PNNL.
+
+exclude:
+  - vendor
+  - bin
+  - README.md
+  - review.html
+  - review-decisions.json
+  - Gemfile
+  - Gemfile.lock
 
 permalink: /:slug
 favicon: "./logo.png"

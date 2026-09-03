@@ -1,0 +1,2 @@
+{%- assign paper = site.data.publications | where: "id", include.id | first -%}
+{{ include.label | default: "Paper" }}: {{ paper.reference }}

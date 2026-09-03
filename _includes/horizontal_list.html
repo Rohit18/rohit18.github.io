@@ -1,10 +1,9 @@
 <ul class="horizontal-list">
   {% for item in include.collection %}
     <li>
-      <a href="{{ item.url }}"{% if item.new_tab %} target="_blank" rel="noopener"{% endif %}>
+      <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}{% if item.new_tab %} target="_blank" rel="noopener"{% endif %}>
         {{ item.title }}
       </a>
-      &nbsp;&nbsp;
     </li>
   {% endfor %}
 </ul>

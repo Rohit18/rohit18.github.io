@@ -1,218 +1,137 @@
 ---
 layout: default
 ---
-
-<header>
-{% if site.site_options.show_navbar == true %}
-  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
-  <div class="dashed"></div>
-{% endif %}
-
-  <h1>{{ site.title }}</h1>
-  {% if site.site_options.show_description == true %}
-    <p>{{ site.description }}</p>
-  {% endif %}
-</header>
-
-{{ content }}
-
-<!-- <section id="custom-section" style="display: flex;">
-  <div style="flex: 1;">
-    <p>I am a postdoctoral researcher at Pacific Northwest National Laboratory, working on improving urban representation in Climate Models. 
-      I specialize in the application of machine learning and deep learning techniques 
-      in geospatial analysis. Currently, I am working on projects related to urban flooding, informal road detection in Central America, 
-      global surface water detection, global river width measurements, and assessing the impact of humanitarian assistance programs on behavior and landscape. 
-      I enjoy extracting meaningful information from satellite imagery with a focus on the 
-      drivers of climate change and their impacts.
-      I am working at the <a href="https://beth-tellman.github.io/"> social [pixel] lab </a> (University of Arizona) with Dr. Beth Tellman.</p>
+{% include site_header.html %}
+<section class="intro" aria-labelledby="intro-title">
+  <div><p class="eyebrow">Remote sensing · Machine learning · Earth science</p>
+    <h1 id="intro-title">Rohit Mukherjee, Ph.D.</h1>
+    <p class="lead">I develop machine learning methods and satellite datasets to understand flooding, surface water, and urban environments.</p>
+    <p>My work combines multi-sensor Earth observation, geospatial foundation models, and rigorous validation to support climate and Earth science research.</p>
+    <p>I am a Postdoctoral Research Associate at <a href="https://www.pnnl.gov/atmospheric-climate-and-earth-sciences-division">Pacific Northwest National Laboratory</a>, where I study global flood occurrence, urban vegetation, and urban representation in Earth system models.</p>
+    <p id="contact">For research collaborations and questions about my work, email <a href="mailto:rohitmukherjee@live.com">rohitmukherjee@live.com</a>.</p>
+    <p class="resource-links"><a href="/assets/RohitMukherjeeCV.pdf">Download CV</a></p>
   </div>
-  <div style="flex: 1;">
-    <img src="images/me.jpg" alt="Image description">
-  </div>
-</section> -->
-
-<!-- Introduction Section -->
-<section id="custom-section" class="flex-container">
-  <div class="flex-item">
-    <p>
-      I'm a Postdoctoral Researcher at <a href="https://www.pnnl.gov/atmospheric-climate-and-earth-sciences-division"><strong>Pacific Northwest National Laboratory's Atmospheric, Climate, and Earth Sciences (ACES) Division</strong></a>, where my work sits at the intersection of satellite remote sensing, deep learning, and Earth and urban climate science.
-    </p>
-    <p>
-      I develop and apply deep learning and AI methods, from convolutional and transformer-based segmentation models to geospatial foundation models, to extract more reliable information from multi-sensor satellite imagery (Sentinel, Landsat, MODIS, PlanetScope). I currently map urban floods, monitor surface water at global scale, assimilate urban vegetation data to improve climate models, and detect the expansion of informal roads in protected areas.
-    </p>
-    <p>
-      Before PNNL, I was a postdoctoral researcher at the University of Arizona, and I earned my PhD in Geography at The Ohio State University, where my dissertation used deep learning to enhance and fuse multi-sensor satellite imagery. Across these roles, my focus has stayed on building methods that make Earth observation more accurate, accessible, and useful for societally relevant science.
-    </p>
-  </div>
-  <div class="flex-item profile-column">
-    <img class="profile-image" src="images/me.jpg" alt="Portrait of Rohit Mukherjee, a postdoctoral researcher at PNNL" loading="lazy">
-  </div>
+  <img class="portrait" src="/images/me.jpg" alt="Rohit Mukherjee" fetchpriority="high">
+</section>
+<section id="research">
+  <h2>Research</h2>
+<section id="global-flooding"><h3>Global flooding and surface water</h3>
+  <p>I study chronic flooding using a global 10-meter flood-occurrence dataset. I also develop GroundFlood-3K (<a href="https://rohitmukherjee.space/tmw/">imagery gallery</a>), an approximately 3,000-chip flood benchmark, and Sentinel-1 water-mapping methods using AlphaEarth embeddings.</p>
+  <p class="resource-links"><a href="https://zenodo.org/records/15109426">Flood-occurrence dataset</a><a href="https://docs.google.com/presentation/d/1UvzCDatVl2JeWink2RUmuM5N5_KXYtpi/edit">AGU 2025 slides</a><a href="/#manuscripts">Manuscripts</a></p>
 </section>
 
-<section id="now-highlights">
-  <h2>Latest Work</h2>
-  <ul>
-    <li>Talk: <a href="https://docs.google.com/presentation/d/1UvzCDatVl2JeWink2RUmuM5N5_KXYtpi/edit?usp=sharing&ouid=109501448293982423476&rtpof=true&sd=true">Evidence of chronic flooding from a global 10-meter flood-occurrence dataset</a> (AGU 2025).</li>
-    <li>Talk: <a href="https://docs.google.com/presentation/d/115qsgygj9yZVkkKN4YXepE8PqTgVvd3-/edit?usp=sharing&ouid=109501448293982423476&rtpof=true&sd=true">Global urban–rural contrasts in vegetation amount, subtypes, structure, and dynamics, modulated by background conditions</a> (AGU 2025); preprint on <a href="https://www.researchsquare.com/article/rs-8970245/v1">Research Square</a>.</li>
-    <li>Paper: <a href="https://www.sciencedirect.com/science/article/pii/S2352938526002090">Integrating optical and SAR data enables crown-level maps of an emergent tree species, <em>Dipteryx panamensis</em></a> (<em>Remote Sensing Applications: Society and Environment</em>, 2026).</li>
-    <li>Dataset: <a href="https://arxiv.org/abs/2604.23066">Urban Flood Observations (UFO): A hand-labeled training and validation dataset of post-flood inundation</a> (arXiv preprint, 2026).</li>
-  </ul>
+<section id="urban-vegetation"><h3>Urban vegetation and environmental exposure</h3>
+  <p>We are gathering air temperature, land cover, NDVI/EVI, and canopy-height metrics for CONUS and global urban areas.</p>
+  <p>{% include paper_reference.html id="urban-vegetation" label="Preprint" %}</p>
+  <p class="resource-links"><a href="https://docs.google.com/presentation/d/115qsgygj9yZVkkKN4YXepE8PqTgVvd3-/edit">Presentation slides</a></p>
 </section>
 
+<section id="urban-climate"><h3>Urban climate and extremes</h3>
+  <p>I develop global urban-surface datasets and methods to improve urban representation in the Department of Energy’s E3SM land model, integrating satellite remote sensing and machine learning.</p>
+  <p>My work includes data and model integration for urban extremes across U.S. coastal cities. I produced part of the underlying dataset for a multi-city study of how spatially continuous urban-surface properties affect heatwave simulations, currently under review at <em>Journal of Advances in Modeling Earth Systems</em>.</p>
+  <p class="resource-links"><a href="/#manuscripts">Related manuscripts</a></p>
+</section>
 
-
-<!-- <div class="container" style="display:flex;" id="research_list">
-  <div style="flex:1;">
-    <h2>Research Projects</h2>
-    <ul>
-      <li><a href="#urban-flooding">Urban Flooding</a></li>
-      <li><a href="#informal-roads">Informal Roads in Central America</a></li>
-      <li><a href="#global-surface-water">Global Surface Water Mapping</a></li>
-    </ul>
-  </div>
-  <div style="flex:1;margin-top:90px;">
-    <ul>
-
-      <li><a href="#desert-floods">Desert Floods in Arizona</a></li>
-      <li><a href="#usaids">Assessing Intervention Programs by USAID</a></li>
-    </ul>
-  </div>
-</div>
-
-<div id="table-of-contents" style="display:flex; ">
-  <div style="flex:1;">
-    <h2>Overview</h2>
-    <ul>
-      <li><a href="#tools">Tools</a></li>
-      <li><a href="#resources">Resources I Highly Recommend</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#presentations">Recent Presentations</a></li>
-      <li><a href="#lab-contributions">Lab Contributions</a></li>
-      <li><a href="#grant-proposals">Grant Proposals</a></li>
-      <li><a href="#dissertation">Dissertation</a></li>
-    </ul>
-  </div>
-  <div style="flex:1; margin-top:90px;">
-    <ul>
-
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="#teaching">Teaching Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#industry">Industry Experience</a></li>
-      <li><a href="#fieldwork">Field Work</a></li>
-      <li><a href="#academic-service">Service</a></li>
-    </ul>
-  </div>
-</div> -->
-
-<h2>Table of Contents</h2>
-<ul>
-  <li>Research Projects
-    <ul>
-      <li><a href="#urban-flooding">Urban Flood Mapping</a></li>
-      <li><a href="#global-surface-water">Global Surface Water Mapping</a></li>
-      <li><a href="#desert-floods">Desert Floods in Pima County, Arizona</a></li>
-      <li><a href="#informal-roads">Informal Roads in Central America's Protected Forests</a></li>
-      <li><a href="#usaids">Assessing Intervention Programs by USAID</a></li>
-    </ul>
-  </li>
-  <li><a href="#publications">Publications</a></li>
-  <li><a href="#lab-contributions">Lab Contributions</a></li>
-  <li><a href="#grant-proposals">Grant Proposals</a></li>
-  <li><a href="#dissertation">Dissertation</a></li>
-  <li><a href="#awards">Awards</a></li>
-  <li><a href="#teaching">Teaching Experience</a></li>
-  <li><a href="#education">Education</a></li>
-  <li><a href="#industry">Industry Experience</a></li>
-  <li><a href="#fieldwork">Field Work</a></li>
-  <li><a href="#academic-service">Service</a></li>
-
-</ul>
-
-
- 
-  <section id="urban-flooding">
-    <h2>Urban Flood Mapping</h2>
+<section id="urban-flooding">
+    <h3>Urban Flood Mapping</h3>
     <p> A NASA Terrestrial Hydrology Project (#80NSSC21K1341). PI: Beth Tellman.</p>
     <p>Mapping urban floods is challenging because the urban landscape is complex and heterogeneous. To address this, we built <em>Urban Flood Observations</em> (UFO!), a hand-labeled dataset that captures urban flooding across 14 cities worldwide using PlanetScope imagery.</p>
-    <p>Paper: <a href="https://arxiv.org/abs/2604.23066">arXiv:2604.23066</a> &middot; Dataset: <a href="https://zenodo.org/records/19698577">Zenodo</a></p>
-      <img src="images/THP.png" alt="THP image">
+    <p>{% include paper_reference.html id="ufo" label="Preprint" %}</p>
+    <p>Dataset: <a href="https://zenodo.org/records/19698577">Zenodo</a></p>
+      <img loading="lazy" src="/images/THP.png" alt="PlanetScope imagery and hand-labeled urban flood training examples">
       <p><em> A sample from our training dataset built using Labelbox. Source: Planet. </em></p>
       <p>My talk, <a href="https://www.youtube.com/watch?v=mQQx-sbn9N4&ab_channel=IEEEGRSS">Mapping Floods using Earth Observation and AI</a>, on the IEEE GRSS YouTube channel.</p>
-      <p><b>NASA CSDA (#80NSSC21K1163)</b> funded project on developing a global high-resolution hand-labeled flood extent mapping training and validation dataset called FloodPlanet. <a href="https://spj.science.org/doi/full/10.34133/remotesensing.0575">Link to paper</a>.</p>
+      <p><b>NASA CSDA (#80NSSC21K1163)</b> funded project on developing a global high-resolution hand-labeled flood extent mapping training and validation dataset called FloodPlanet.</p>
+      <p>{% include paper_reference.html id="floodplanet" label="Paper" %}</p>
       <a href="#top">top</a>
   </section>
 
-
-  <section id="global-surface-water">
-    <h2>Global Surface Water Mapping</h2>
-    <p>A NASA ACCESS Project (#80NSSC22K0744). Working with Fritz Pollicelli and Beth Tellman. </p>
-    <p>We need validation datasets to evaluate the hundreds (thousands?) of surface water mapping methods using satellite imagery. 
-      We built a globally sampled hand-labeled dataset using PlanetScope imagery. We built a Sentinel-1 model trained on Dynamic World-based weak labels data that 
-      outperforms NASA's IMPACT flood dataset. We are now applying this model to extract river width globally on-demand using Sentinel-1 data for all river reaches
-      from the impressive SWORD dataset. We are manually calculating effective river width using PlanetScope and then verifying using SWOT data.</p>
-    <p>Paper: <a href="https://essd.copernicus.org/articles/16/4311/2024/essd-16-4311-2024.html">Earth System Science Data</a></p>
-    <img src="images/SW.png" alt="Surface water classification examples">
+<section id="global-surface-water">
+    <h3>Global Surface Water Dataset</h3>
+    <p>A NASA ACCESS Project (#80NSSC22K0744). In collaboration with Frederick Policelli and Beth Tellman. </p>
+    <p>I led the development of a globally sampled, hand-labeled validation dataset using PlanetScope imagery, published in <em>Earth System Science Data</em> in 2024. This work supports independent evaluation of satellite surface-water maps.</p>
+<p>My ongoing work uses Dynamic World weak labels, Sentinel-1 radar, and AlphaEarth embeddings to extend surface-water monitoring across sensors. I am developing human-in-the-loop post-training workflows for flood models and exploring applications to river-width measurement.</p>
+<p>I also deployed a locally fine-tuned Sentinel-1 inundation model in a public application for the Rio Grande Valley, in partnership with Development Seed.</p>
+    <p>{% include paper_reference.html id="surface-water" label="Paper" %}</p>
+    <img loading="lazy" src="/images/SW.png" alt="Surface water classification examples">
     <p><b>NASA CSDA (#80NSSC21K1163)</b> funded project on evaluating BlackSky, where I am a Co-Investigator.</p>
-    <a href="#top">top</a>
-  </section>
 
+  <a href="#top">top</a>
+</section>
 
-  <section id="desert-floods">
-    <h2>Desert Floods in Pima County, Arizona</h2>
+<section id="desert-floods">
+    <h3>Desert Floods in Pima County, Arizona</h3>
     <p>A Pima County Flood Control District project in Arizona.</p>
     <p>This project focused on mapping fast-moving floods in the Sonoran Desert, which are difficult to capture with conventional surface-water methods. Instead, we used PlanetScope imagery to identify wet soils following rainfall events as a measure of flood extent. We then compared these results with the locations of recorded road closures to identify additional areas that may warrant road closures during future flooding.</p>
-    <img src="images/PCF.jpg" alt="PCF image">
+    <img loading="lazy" src="/images/PCF.jpg" alt="Satellite flood signatures and recorded road closures in Pima County">
     <p><em>Identifying regions where it flooded, but there weren't any road closures for safety. Source: Planet.</em></p>
+    <p><a href="https://docs.google.com/presentation/d/1n5BMrEUCTTaluOXjEqSTTv3FsPVxZ5TQ/edit?usp=sharing&amp;ouid=109501448293982423476&amp;rtpof=true&amp;sd=true">Desert flooding poster</a></p>
     <a href="#top">top</a>
   </section>
 
-
-  <section id="informal-roads">
-    <h2>Informal Roads in Central America's Protected Forests</h2>
+<section id="informal-roads">
+    <h3>Informal Roads in Central America's Protected Forests</h3>
     <p>A NASA LCLUC Project (#80NSSC21K0297), in collaboration with Beth Tellman, Nicholas Magliocca, Matthew Fagan, Steven Sesnie, Erik Nielsen, Jennifer Devine, and Kendra McSweeney.</p>
     <p>This project examines how narco-trafficking drives deforestation in Central America, using informal roads as an indicator. We developed a locally trained deep learning model that outperforms Microsoft and OpenStreetMap (OSM) in road identification. To analyze road growth since 2001, we use Landsat 7 alongside additional data sources to construct a counterfactual model assessing the impact of narco-trafficking on deforestation.</p>
-    <p>Paper: <a href="https://www.tandfonline.com/doi/full/10.1080/13658816.2024.2441415">International Journal of Geographical Information Science</a></p>
-    <img src="images/LCLUC.jpg" alt="LCLUC image">
+    <p>{% include paper_reference.html id="data-pedigree" label="Paper" %}</p>
+    <p>{% include paper_reference.html id="costa-rica" label="New paper" %}</p>
+    <img loading="lazy" src="/images/LCLUC.jpg" alt="Satellite examples of informal roads and land-use change in Central America">
     <p> <em> Markers of narco-trafficking in Central America. Sources: Planet and ESA. </em> </p>
     <a href="#top">top</a>
   </section>
 
-
-  <section id="usaids">
-    <h2>Assessing Intervention Programs by USAID</h2>
+<section id="usaids">
+    <h3>Assessing Intervention Programs by USAID</h3>
     <p>Funded by USAID's Bureau for Humanitarian Assistance (BHA), in collaboration with the University of Arizona's Institute for Resilience (AIR) and the Economics and Sociology Departments.</p>
     <p>This project develops metrics to assess the impact of BHA-funded programs delivered through local NGOs, which aim to drive behavioral and landscape changes, particularly in response to disasters. Our focus is on capturing landscape changes using satellite remote sensing, providing BHA with tools to evaluate the impact of these programs.</p>
-    <p>Paper: <a href="https://www.sciencedirect.com/science/article/pii/S2212420926000488">International Journal of Disaster Risk Reduction</a></p>
+    <p>{% include paper_reference.html id="humanitarian-assistance" label="Paper" %}</p>
     <a href="#top">top</a>
   </section>
 
+<section id="data">
+  <h3>Dataset Releases</h3>
+  <dl class="dataset-list">
+    <div><dt>Urban Flood Observations (UFO) <span class="status">Released</span></dt><dd>Hand-labeled PlanetScope observations of urban flooding across 14 cities worldwide. Lead author.<p class="resource-links"><a href="https://zenodo.org/records/19698577">Dataset</a></p><p>{% include paper_reference.html id="ufo" label="Preprint" %}</p></dd></div>
+    <div><dt>Global surface-water validation <span class="status">Published · 2024</span></dt><dd>A globally sampled, high-resolution, hand-labeled dataset for evaluating surface-water extent maps. Lead author.<p class="resource-links"><a href="https://doi.org/10.25739/03nt-4f29">Dataset</a></p><p>{% include paper_reference.html id="surface-water" label="Paper" %}</p></dd></div>
+    <div><dt>FloodPlanet <span class="status">Published · 2025</span></dt><dd>A manually labeled, multi-source high-resolution dataset spanning 19 flood events globally for evaluating inundation segmentation models. Co-author; NASA CSDA Co-Investigator.<p class="resource-links"><a href="https://zenodo.org/records/15238572">Dataset</a><a href="https://github.com/Flamexzzj/FloodPlanet_Code">Code</a></p><p>{% include paper_reference.html id="floodplanet" label="Paper" %}</p></dd></div>
+  </dl>
+</section>
 
+
+</section>
 
 <section id="publications">
   <h2>Publications</h2>
+  <h3 id="published">Peer-reviewed publications</h3>
+  {% include publication_list.html group="published" %}
+  <h3 id="manuscripts">Preprints &amp; manuscripts under review</h3>
+  <p class="note">Manuscript statuses updated September 3, 2026.</p>
+  {% include publication_list.html group="review" %}
+  <a href="#top">top</a>
+</section>
+
+<section id="technical-skills">
+  <h2>Technical Skills</h2>
   <ul>
-    <li>Diana W. Githu; Zack Guido; Erica A. Goto; Corrie Hannah; James Kamunge; Eligah Mutanda; Tim J. Finan; Padraic Finan; Karyn M. Fox; Suzanne Nelson; Prashanti Sharma; <strong>Rohit Mukherjee</strong>. (2026). Humanitarian assistance and its expected behavior and land use changes: Insights from Bangladesh and Kenya. <em>International Journal of Disaster Risk Reduction</em>, 106036.</li>
-    <li><strong>Mukherjee, Rohit</strong>; Chakraborty, T. C. (Submitted). Background climate and socioeconomic conditions constrain global urban–rural contrasts in vegetation amount, subtype, and structure. <em>Science Advances</em>.</li>
-    <li>Zhang, Zhijie; Giezendanner, Jonathan; <strong>Mukherjee, Rohit</strong>; Tellman, Beth; Melancon, Alexander; Purri, Matt; Gurung, Iksha; Lall, Upmanu; Barnard, Kobus; Molthan, Andrew. (2025). Assessing inundation semantic segmentation models trained on high-versus low-resolution labels using floodplanet, a manually labeled multi-sourced high-resolution flood dataset. <em>Journal of Remote Sensing</em>, 5, 0575.</li>
-    <li>Magliocca, Nicholas R; Sink, Carter D; Devine, Jennifer A; Fagan, Matthew E; Aguilar-Gonzalez, Bernardo; McSweeney, Kendra; <strong>Mukherjee, Rohit</strong>; Nielsen, Erik A; Sesnie, Steven E; Tellman, Beth. (2025). A data pedigree system to support geospatial analyses of human-environment interactions in data poor contexts. <em>International Journal of Geographical Information Science</em>, 39(6), 1223-1246.</li>
-    <li><strong>Mukherjee, Rohit</strong>; Policelli, Frederick; Wang, Ruixue; Arellano-Thompson, Elise; Tellman, Beth; Sharma, Prashanti; Zhang, Zhijie; Giezendanner, Jonathan. (2024). A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps. <em>Earth System Science Data</em>, 16(9), 4311-4323.</li>
-    <li><strong>Mukherjee, Rohit</strong>; Liu, Desheng. (2023). Spatial and spectral translation of Landsat 8 to Sentinel-2 using conditional generative adversarial networks. <em>Remote Sensing</em>, 15(23), 5502.</li>
-    <li>Giezendanner, Jonathan; <strong>Mukherjee, Rohit</strong>; Purri, Matthew; Thomas, Mitchell; Mauerman, Max; Islam, AKMl; Tellman, Beth. (2023). Inferring the past: A combined CNN-LSTM deep learning framework to fuse satellites for historical inundation mapping. <em>Proceedings of the IEEE/CVF conference on computer vision and pattern recognition</em>, 2155-2165.</li>
-    <li><strong>Mukherjee, Rohit</strong>; Liu, Desheng. (2021). Downscaling MODIS spectral bands using deep learning. <em>GIScience &amp; Remote Sensing</em>, 58(8), 1300-1315.</li>
-    <li>Patel, Nilanchal; <strong>Mukherjee, Rohit</strong>. (2015). Extraction of impervious features from spectral indices using artificial neural network. <em>Arabian Journal of Geosciences</em>, 8(6), 3729-3741.</li>
+    <li><strong>Machine learning:</strong> PyTorch, fastai, Hugging Face; CNNs, transformers, GANs, and geospatial foundation models.</li>
+    <li><strong>Python &amp; geospatial packages:</strong> NumPy, pandas, xarray, Rasterio, GeoPandas, Shapely, GDAL, and geemap.</li>
+    <li><strong>GIS &amp; Earth observation:</strong> Google Earth Engine, QGIS, ArcGIS, Microsoft Planetary Computer, NASA Earthdata/CMR, and ASF HyP3.</li>
+    <li><strong>Computing:</strong> HPC clusters and GPU computing (NERSC and university systems), Slurm, Google Colab, Docker, Lambda, and ASF OpenScienceLab.</li>
+    <li><strong>Development &amp; annotation:</strong> Python, Jupyter notebooks, VS Code, Git/GitHub, Labelbox, and NASA ImageLabeler.</li>
   </ul>
   <a href="#top">top</a>
 </section>
 
-
 <section id="lab-contributions">
-  <h2>Lab Contributions</h2>
-  <ul>
-    <li>Mentored and co-supervised PhD and graduate students at the University of Arizona: Elise Arellano-Thompson, Ruixue Wang, Hannah Friedrich, and Prashanti Sharma.</li>
-    <li>Built and maintained the lab's computational infrastructure.</li>
-    <li>Developed a curriculum for training PhD students towards applying deep learning solutions to geospatial problems.</li>
-    <li>Delivered hands-on machine learning and deep learning training to PhD students.</li>
+  <h2>Mentoring &amp; Contributions</h2>
+  <p>I mentor researchers in applying machine learning to geospatial problems and help build the tools and shared practices that make this work possible.</p>
+  <ul class="contributions-list">
+    <li><strong>Student research at PNNL.</strong> Mentoring a high school researcher on satellite-based parking-lot mapping. We developed a pipeline using 400,000+ samples across 107 U.S. cities toward a nationwide 10-meter map of off-street parking lots.</li>
+    <li><strong>Graduate mentorship.</strong> Co-supervised four Ph.D. candidates at the University of Arizona. Built lab computing infrastructure, shared version-control practices, and hands-on deep learning training.</li>
+    <li><strong>Community &amp; training.</strong> Organized the GeoAI Hackathon at PNNL TechFest 2026; co-convened IGARSS sessions in 2023 and 2026; delivered workshops on geospatial AI/ML and scientific research tools.</li>
+    <li id="academic-service"><strong>Scientific service.</strong> Invited to the NASA Peer Review Panel (2023) to review research proposals for potential funding. Journal reviewer for <em>npj Climate and Atmospheric Science</em>, <em>ISPRS Journal of Photogrammetry and Remote Sensing</em>, and <em>Water Security</em>.</li>
+    <li><strong>College of Arts and Sciences Dean’s Student Advisory Board</strong> (2019-20): Provided feedback to the Dean of Arts and Sciences on graduate student issues and concerns.</li>
+    <li><strong>Delegate - Council of Graduate Students</strong> (2018-20)</li>
   </ul>
   <a href="#top">top</a>
 </section>
@@ -227,25 +146,22 @@ layout: default
   <a href="#top">top</a>
 </section>
 
-
 <section id="dissertation">
   <h2>PhD Dissertation</h2>
   <p><em><b>"Improving Satellite Data Quality and Availability: A Deep Learning Approach"</b></em></p>
 
-  <p>This research involved improving the quality (spatial, spectral resolutions) and availability (temporal resolution) of existing satellite image products using deep learning models. The study focused on utilizing techniques such as <b>deep residual encoder-decoder networks</b> and <b>generative adversarial networks</b> to enhance satellite images from sources like <b>MODIS</b>, <b>Sentinel-2</b>, and <b>Landsat 8</b>. The work is aimed to advance <b>satellite image fusion methodologies</b> for various applications.</p> 
+  <p>This research involved improving the quality (spatial, spectral resolutions) and availability (temporal resolution) of existing satellite image products using deep learning models. The study focused on utilizing techniques such as <b>deep residual encoder-decoder networks</b> and <b>generative adversarial networks</b> to enhance satellite images from sources like <b>MODIS</b>, <b>Sentinel-2</b>, and <b>Landsat 8</b>. The work is aimed to advance <b>satellite image fusion methodologies</b> for various applications.</p>
   <p>Investigated several aspects of applying convolution networks and generative adversarial learning on satellite imagery. Asked and answered questions on optimal loss functions including adversarial learning. Demonstrated the advantages of fine tuning on your region of interest among several other insights! Spending hours deep learning training models (and failing most experiments) is at least helping me save time now.</p>
 
   <p>Two peer-reviewed papers came out of this work:</p>
   <ul>
-    <li><a href="https://www.tandfonline.com/doi/full/10.1080/15481603.2021.1984129">Downscaling MODIS spectral bands using deep learning</a> (<em>GIScience &amp; Remote Sensing</em>, 2021).</li>
-    <li><a href="https://www.mdpi.com/2072-4292/15/23/5502">Spatial and spectral translation of Landsat 8 to Sentinel-2 using conditional generative adversarial networks</a> (<em>Remote Sensing</em>, 2023).</li>
+    <li>{% include paper_reference.html id="modis-downscaling" label="Paper" %}</li>
+    <li>{% include paper_reference.html id="satellite-translation" label="Paper" %}</li>
   </ul>
 
   <p><a href="https://docs.google.com/presentation/d/1llPJddxodo1s0_afQSn4HpJ9d_PmIksS/edit?usp=sharing&ouid=105622172800104875164&rtpof=true&sd=true">Link to slides.</a></p>
   <a href="#top">top</a>
 </section>
-
-
 
 <section id="awards">
   <h2>Awards</h2>
@@ -255,7 +171,6 @@ layout: default
   </ul>
   <a href="#top">top</a>
 </section>
-
 
 <section id="teaching">
   <h2>Teaching Experience</h2>
@@ -274,17 +189,16 @@ layout: default
   <a href="#top">top</a>
 </section>
 
-
 <section id="education">
   <h2>Education</h2>
   <ul>
-    <li><strong>Ph.D., Geography</strong>, The Ohio State University (AU 2016 - SU 2020)<br>
+    <li><strong>Ph.D., Geography</strong>, The Ohio State University<br>
       Focus Areas: Remote Sensing, Deep Learning<br>
       Advisor: Dr. Desheng Liu</li>
-    <li><strong>M.Sc., Geo-Informatics</strong>, Birla Institute of Technology, Mesra, India (2011 - 2013)<br>
+    <li><strong>M.Sc., Geo-Informatics</strong>, Birla Institute of Technology, Mesra, India<br>
       <em>Thesis: "Extraction of Impervious Features through Artificial Neural Network using Spectral Indices"</em><br>
       Advisor: Dr. Nilanchal Patel</li>
-    <li><strong>B.Sc., Computer Science</strong>, St. Xavier's College, Kolkata, India (2008 - 2011)<br>
+    <li><strong>B.Sc., Computer Science</strong>, St. Xavier's College, Kolkata, India<br>
       <em>Thesis: "A Social Networking Website for Academics (SharEd)"</em></li>
   </ul>
   <a href="#top">top</a>
@@ -299,30 +213,13 @@ layout: default
   <a href="#top">top</a>
 </section>
 
-
 <section id="fieldwork">
   <h2>Field Work</h2>
-  <p>Visited Costa Rica in the summer of 2023 with Prof. Matt Fagan and grads Elise and Felipe to collect training and validation data for mapping land use/cover and roads.</p>
-  <img src="images/CR.png" alt="CR image">
+  <p>Visited Costa Rica in the summer of 2023 with Prof. Matt Fagan and graduate students to collect training and validation data for mapping land use/cover and roads.</p>
+  <img loading="lazy" src="/images/CR.png" alt="Field sites and road validation points collected in Costa Rica">
   <p>From left to right: all collected road validation points in the Osa Peninsula, Costa Rica; unpaved roads constructed from asphalt and gravel sourced from nearby rivers, which frequently leads to misclassification between the two surface types; a field site in Corcovado National Park; and roads bordering oil palm plantations.</p>
     <a href="#top">top</a>
 </section>
 
 
-<section id="academic-service">
-  <h2>Academic Service</h2>
-  <ul>
-    <li><strong>NASA Peer Review Panel</strong> (2023): Invited to review multiple proposals for potential funding.</li>
-    <li><strong>College of Arts and Sciences Dean’s Student Advisory Board</strong> (2019-20): Provided feedback to the Dean of Arts and Sciences on graduate student issues and concerns.</li>
-    <li><strong>Delegate - Council of Graduate Students</strong> (2018-20)</li>
-  </ul>
-  <a href="#top">top</a>
-</section>
-
-
-{% if site.site_options.show_footer == true %}
-  <footer>
-    <div class="dashed"></div>
-    {% include horizontal_list.html collection=site.data.home.footer_entries %}
-  </footer>
-{% endif %}
+{% include site_footer.html %}

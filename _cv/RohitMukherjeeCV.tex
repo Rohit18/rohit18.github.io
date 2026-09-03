@@ -1,0 +1,327 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Rohit Mukherjee — Professional CV
+% Updated: 3 Sep 2026
+% Standalone article-based template (no custom .cls needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[left=0.75in, top=0.5in, right=0.75in, bottom=0.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{setspace}
+
+% ------------------ STYLES ------------------
+\pagestyle{empty}
+\setlength{\parskip}{0.25em}
+\setlength{\parindent}{0pt}
+
+\newlist{entrylist}{itemize}{1}
+\setlist[entrylist]{label={}, leftmargin=0.2in, itemsep=0.2em, topsep=0.2em}
+
+\newlist{subitems}{itemize}{1}
+\setlist[subitems]{label=\textbullet, leftmargin=0.2in, itemsep=0.1em}
+
+\titleformat{\section}
+  {\large\scshape\raggedright}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+\titlespacing*{\section}{0pt}{0.8ex}{0.6ex}
+
+% ------------------ DOCUMENT ------------------
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Rohit Mukherjee, Ph.D.}}\\[2pt]
+  \small
+  Postdoctoral Research Associate, Atmospheric, Climate, and Earth Sciences Division\\
+  Pacific Northwest National Laboratory \;|\; Groveport, OH\\[2pt]
+  \href{mailto:rohit.mukherjee@pnnl.gov}{rohit.mukherjee@pnnl.gov}
+  \;|\; +1-614-906-7632
+  \;|\; \href{https://rohitmukherjee.space/}{rohitmukherjee.space}\\
+  \href{https://scholar.google.com/citations?user=FBk18BwAAAAJ&hl=en}{Google Scholar}
+  \;|\; ORCID: \href{https://orcid.org/0000-0002-8162-3298}{0000-0002-8162-3298}
+  \;|\; \href{https://www.linkedin.com/in/rohitmukherjee/}{LinkedIn}
+  \;|\; \href{https://github.com/Rohit18}{GitHub}\\
+  \emph{Citizenship: India \;/\; Work Authorization: U.S. Permanent Resident}
+\end{center}
+
+% ================================================================
+\section*{Professional Summary}
+% ================================================================
+
+Remote sensing and machine learning scientist specializing in the application of deep learning to multi-sensor satellite Earth observation data. Research spans flood mapping, global surface water monitoring, urban vegetation characterization, environmental exposure assessment, and improved urban representation in Earth system models. Contributor to projects funded by NASA and NIH. Author of peer-reviewed publications in international journals, co-author on federally funded research awards, invited reviewer for scientific journals and NASA proposal panels, and mentor to graduate and high school researchers.
+
+% ================================================================
+\section*{Education}
+% ================================================================
+
+\begin{entrylist}
+  \item \textbf{Ph.D., Geography}, The Ohio State University, Columbus, OH \hfill \textit{2016--2020}\\
+  \emph{Dissertation:} ``Improving Satellite Data Quality and Availability: A Deep Learning Approach''\\
+  \emph{Advisor:} Dr.\ Desheng Liu
+
+  \item \textbf{M.Sc., Geo-Informatics}, Birla Institute of Technology, Mesra, India \hfill \textit{2011--2013}\\
+  \emph{Thesis:} ``Extraction of Impervious Features through Artificial Neural Network Using Spectral Indices''\\
+  \emph{Advisor:} Dr.\ Nilanchal Patel \;|\; \emph{First Place in Academics}
+
+  \item \textbf{B.Sc., Computer Science}, St.\ Xavier's College, Kolkata, India \hfill \textit{2008--2011}
+\end{entrylist}
+
+% ================================================================
+\section*{Professional Experience}
+% ================================================================
+
+\begin{entrylist}
+  % ---------- PNNL ----------
+  \item \textbf{Postdoctoral Research Associate} \hfill \textit{Apr 2024--Present}\\
+  \emph{Atmospheric, Climate, and Earth Sciences Division}\\
+  \emph{Pacific Northwest National Laboratory} \;|\; \emph{PI: Dr.\ TC Chakraborty}
+  \begin{subitems}
+    \item Develop global urban-surface datasets and methods to improve urban representation in the Department of Energy's E3SM land model, integrating satellite remote sensing with machine learning.
+    \item Lead data and model integration frameworks for urban extremes across U.S. coastal cities.
+    \item Apply geospatial foundation models (Google AlphaEarth Foundations) and human-in-the-loop post-training approaches to improve flood and surface water model accuracy on unseen events; received NERSC GPU access for training global and regional models.
+    \item Developed GroundFlood-3K, a ${\sim}$3,000-chip global multi-sensor flood benchmark; model outperformed NASA's OPERA flood product on independent scenes.
+    \item Built a reproducible geospatial data pipeline for the GECC project (a PNNL--NIH collaboration), combining air temperature, land cover, NDVI/EVI, and canopy-height data across ${\sim}$9,000 global urban areas, U.S. Census tracts, and ZCTAs to support epidemiological research on environmental exposure and dementia risk.
+    \item Mentored a high school student on satellite-based parking-lot classification; developed a scalable pipeline using 400,000+ samples across 107 U.S. cities, achieving 85\% accuracy and an 84\% F1 score---enabling the first 10-meter nationwide map of off-street parking lots.
+    \item Deliver internal technical training on AI/ML frameworks for geospatial applications and on generative AI tools for scientific research workflows; organized the GeoAI Hackathon at TechFest 2026.
+  \end{subitems}
+
+  % ---------- UArizona ----------
+  \item \textbf{Postdoctoral Research Associate} \hfill \textit{Jun 2021--Apr 2024}\\
+  \emph{School of Geography, Development, and Environment}\\
+  \emph{The University of Arizona, Tucson, AZ} \;|\; \emph{PI: Dr.\ Beth Tellman}
+  \begin{subitems}
+    \item Led NASA-funded research (Terrestrial Hydrology, CSDA, LCLUC) building deep learning models and benchmark datasets for floods, surface water, and informal road detection.
+    \item Deployed a locally fine-tuned, weakly supervised Sentinel-1 inundation model into a live public web application serving the Rio Grande Valley, in partnership with Development Seed.
+    \item Partnered with the Pima County Regional Flood Control District to detect flood signatures at recorded road-closure locations across multiple monsoon events using multi-sensor data fusion.
+    \item Served as Co-Investigator on a NASA Commercial Smallsat Data Acquisition award.
+    \item Mentored and co-supervised four Ph.D.\ candidates; built and maintained lab computational infrastructure and established shared version-control standards.
+  \end{subitems}
+
+  % ---------- OSU Visiting ----------
+  \item \textbf{Visiting Fellow} \hfill \textit{Jan 2021--May 2021}\\
+  \emph{Department of Geography}\\
+  \emph{The Ohio State University, Columbus, OH} \;|\; \emph{PI: Dr.\ Desheng Liu}
+  \begin{subitems}
+    \item Conducted research on cross-sensor harmonization for increasing satellite data availability using generative networks, extending dissertation work on multi-sensor image fusion.
+  \end{subitems}
+
+  % ---------- OSU TA ----------
+  \item \textbf{Teaching Assistant and Instructor} \hfill \textit{2016--2020}\\
+  \emph{The Ohio State University, Columbus, OH}
+  \begin{subitems}
+    \item Independently taught four graduate-level summer courses; served as teaching assistant across GIS, remote sensing, spatial data analysis, and cartography courses.
+    \item Converted an in-person GIS course to a fully online format on short notice during the COVID-19 pandemic; Student Evaluation of Instruction scores consistently exceeded departmental and university means.
+  \end{subitems}
+
+  % ---------- Cognizant ----------
+  \item \textbf{Programmer Analyst} \hfill \textit{2013--2015}\\
+  \emph{Cognizant Technology Solutions, Kolkata, India}
+  \begin{subitems}
+    \item Developed a VBA automation script for a legacy DOS application used in ESCROW processing, reducing manual data entry time by approximately 85\%.
+    \item Built a web-based interface for ServiceNow ticket processing using C\# and ASP.NET.
+  \end{subitems}
+\end{entrylist}
+
+% ================================================================
+\section*{Peer-Reviewed Publications}
+% ================================================================
+
+\small
+\begin{enumerate}[leftmargin=0.2in, itemsep=0.25em]
+  \item Githu, D.\ W., Guido, Z., Goto, E.\ A., Hannah, C., Kamunge, J., Mutanda, E., Finan, T.\ J., Finan, P., Fox, K.\ M., Nelson, S., Sharma, P., \& \textbf{Mukherjee, R.} (2026).
+  Humanitarian assistance and its expected behavior and land use changes: Insights from Bangladesh and Kenya.
+  \emph{International Journal of Disaster Risk Reduction}, Article 106036.
+
+
+  \item Saad, F., \textbf{Mukherjee, R.}, Henebry, G.\ M., Schwartz, N., Jimenez, M., Lewis, T., \& Fagan, M.\ E. (2026).
+  Integrating optical and SAR data enables crown-level maps of an emergent tree species, \emph{Dipteryx panamensis}.
+  \emph{Remote Sensing Applications: Society and Environment}, 42, Article 102076.
+
+  \item Magliocca, N.\ R., Devine, J.\ A., Fagan, M.\ E., Aguilar-Gonz\'{a}lez, B., McSweeney, K., \textbf{Mukherjee, R.}, Nielsen, E.\ A., Sesnie, S.\ E., \& Tellman, B. (2026).
+  Narco-trafficking caused land-use change: The exceptional case of Costa Rica.
+  \emph{Journal of Land Use Science}, 21(1), 349--366.
+
+  \item Zhang, Z., Giezendanner, J., \textbf{Mukherjee, R.}, Tellman, B., Melancon, A., Purri, M., Gurung, I., Lall, U., Barnard, K., \& Molthan, A. (2025).
+  Assessing inundation semantic segmentation models trained on high- versus low-resolution labels using FloodPlanet, a manually labeled multi-sourced high-resolution flood dataset.
+  \emph{Journal of Remote Sensing}, 5, 0575.
+
+  \item Magliocca, N.\ R., Sink, C.\ D., Devine, J.\ A., Fagan, M.\ E., Aguilar-Gonz\'{a}lez, B., McSweeney, K., \textbf{Mukherjee, R.}, Nielsen, E.\ A., Sesnie, S.\ E., \& Tellman, B. (2025).
+  A data pedigree system to support geospatial analyses of human--environment interactions in data-poor contexts.
+  \emph{International Journal of Geographical Information Science}, 39(6), 1223--1246.
+
+  \item \textbf{Mukherjee, R.}, Policelli, F., Wang, R., Arellano-Thompson, E., Tellman, B., Sharma, P., Zhang, Z., \& Giezendanner, J. (2024).
+  A globally sampled high-resolution hand-labeled validation dataset for evaluating surface water extent maps.
+  \emph{Earth System Science Data}, 16(9), 4311--4323.
+
+  \item \textbf{Mukherjee, R.}, \& Liu, D. (2023).
+  Spatial and spectral translation of Landsat 8 to Sentinel-2 using conditional generative adversarial networks.
+  \emph{Remote Sensing}, 15(23), 5502.
+
+  \item Giezendanner, J., \textbf{Mukherjee, R.}, Purri, M., Thomas, M., Mauerman, M., Islam, A.\ K.\ M., \& Tellman, B. (2023).
+  Inferring the past: A combined CNN--LSTM deep learning framework to fuse satellites for historical inundation mapping.
+  \emph{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops}, 2155--2165.
+
+  \item \textbf{Mukherjee, R.}, \& Liu, D. (2021).
+  Downscaling MODIS spectral bands using deep learning.
+  \emph{GIScience \& Remote Sensing}, 58(8), 1300--1315.
+
+  \item Patel, N., \& \textbf{Mukherjee, R.} (2015).
+  Extraction of impervious features from spectral indices using artificial neural network.
+  \emph{Arabian Journal of Geosciences}, 8(6), 3729--3741.
+\end{enumerate}
+
+\normalsize
+
+% ================================================================
+\section*{Manuscripts Under Review and In Preparation}
+% ================================================================
+
+\small
+\begin{enumerate}[leftmargin=0.2in, itemsep=0.25em, resume]
+  \item \textbf{Mukherjee, R.}, \& Chakraborty, T.\ C.
+  Evidence of chronic flooding from a global 10-meter flood-occurrence dataset.
+  \emph{Nature} (revised and resubmitted; back with referees).
+  Dataset publicly released via \href{https://zenodo.org/records/15109426}{Zenodo}.
+
+  \item \textbf{Mukherjee, R.}, Friedrich, H.\ K., Tellman, B., Islam, A., Zhang, Z., Giezendanner, J., Lall, U., \& Lakshmi, V. (2026).
+  Urban Flood Observations (UFO): A hand-labeled training and validation dataset of post-flood inundation.
+  Preprint: \href{https://arxiv.org/abs/2604.23066}{arXiv:2604.23066}. Dataset: \href{https://zenodo.org/records/19698577}{Zenodo}.
+  \emph{Scientific Data} (revised and resubmitted; in peer review).
+
+  \item \textbf{Mukherjee, R.}, \& Chakraborty, T.\ C.
+  Background climate and socioeconomic conditions constrain global urban--rural contrasts in vegetation amount, subtype, and structure.
+  Preprint: \href{https://www.researchsquare.com/article/rs-8970245/v1}{Research Square}.
+  In revision for \emph{One Earth}.
+
+  \item Jiang, T., Chakraborty, T.\ C., Cheng, Y., \textbf{Mukherjee, R.}, Zhao, L., \& Martilli, A.
+  Impact of spatially continuous urban surface properties on heatwave simulations: A multi-city analysis.
+  \emph{Journal of Advances in Modeling Earth Systems} (under review).
+
+  \item Leffel, B., Chakraborty, T.\ C., \textbf{Mukherjee, R.}, Rodriguez Lombeida, A., \& Song, K.\ H.
+  Public rail transit shields global urban forests from expansionary pressures of car dependence.
+  \emph{Nature Communications} (in revision).
+
+  \item Sun, T., Crank, P., Ding, Y., Doran, E., \textbf{Mukherjee, R.}, \emph{et al.}
+  Rapid growth in urban climate science masks structural transferability gaps.
+  \emph{Nature Cities} (under review).
+
+  \item \textbf{Mukherjee, R.}, Policelli, F., Chakraborty, T.\ C., Giezendanner, J., Tellman, B., Sullivan, J., \& Sun, N.
+  Extending Dynamic World Surface Water Mapping to Sentinel-1 with AlphaEarth Embeddings.
+  \emph{IEEE Geoscience and Remote Sensing Letters} (in preparation).
+
+  \item \textbf{Mukherjee, R.}, Policelli, F., Chakraborty, T.\ C., \& Sun, N.
+  A Global Multi-Sensor Dataset for Post-Flood Inundation Mapping Derived from Geolocated Flood Event Reports.
+  Target: \emph{Earth System Science Data} (in preparation).
+
+  \item \textbf{Mukherjee, R.}, Chakraborty, T.\ C., \& Sun, N.
+  A Weakly Supervised Multi-Sensor Framework for High-Temporal-Resolution Surface Water Dynamics.
+  Target: \emph{ISPRS Journal of Photogrammetry and Remote Sensing} (planned).
+\end{enumerate}
+\normalsize
+
+% ================================================================
+\section*{Conference Presentations and Invited Talks}
+% ================================================================
+
+\begin{entrylist}
+  \item \textbf{GroundFlood-3K: A global high-resolution multi-sensor dataset for flood inundation mapping.}
+  Abstract submitted to AGU Fall Meeting, 2026.
+
+  \item \textbf{Co-convened session and presented poster.}
+  IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2026.
+
+  \item \textbf{Evidence of chronic flooding from a global 10-meter flood-occurrence dataset.}
+  American Geophysical Union (AGU) Fall Meeting, 2025.
+
+  \item \textbf{Global urban--rural contrasts in vegetation amount, subtypes, structure, and dynamics, modulated by background conditions.}
+  American Association of Geographers (AAG) Annual Meeting, Detroit, MI, 2025.
+
+  \item \textbf{Global Satellite Analysis Reveals Higher Local Flooding Tendency in Major Cities.}
+  AGU Fall Meeting, Washington, D.C., 2024.
+
+  \item \textbf{Global to Local: Weakly Supervised Cross-Modal Deep Learning for Scalable Surface Water Mapping.}
+  AGU Fall Meeting, Washington, D.C., 2024.
+
+  \item \textbf{Mapping urban floods using multi-sensor satellite imagery and deep learning.}
+  IGARSS, Pasadena, CA, 2023.
+
+  \item \textbf{Mapping urban floods using PlanetScope and deep learning.}
+  Machine Learning Meets Flood Forecasting Workshop (Google), 2023, virtual. (Poster)
+
+  \item \textbf{Towards Mapping Clandestine Infrastructure in Central America's Protected Areas Affected by Narco-trafficking Using Multi-sensor Data Fusion and Deep Learning.}
+  Conference of Latin Americanist Geographers (CLAG), Tucson, AZ, 2023.
+
+  \item \textbf{Training and validating deep learning models for urban flood mapping using public and commercial satellite sensors.}
+  AGU Fall Meeting, Chicago, IL, 2022.
+
+  \item \textbf{Flooding in the desert: Assessing the value of satellite observations of inundation from the North American Monsoon.}
+  AGU Fall Meeting, Chicago, IL, 2022.
+
+  \item \textbf{Improving the utility of remote sensing for flood forecasting through machine learning.}
+  NASA SERVIR Annual Applied Science Team Meeting, 2022, virtual.
+
+  \item \textbf{Invited talk:} Mapping clandestine roads in Central America. Machine Learning for Remote Sensing Talk Series, 2022.
+
+  \item \textbf{Invited talk:} Spatial and spectral harmonization between Landsat 8 and Sentinel-2. Floodbase, 2021.
+\end{entrylist}
+
+% ================================================================
+\section*{Internal Presentations and Workshops}
+% ================================================================
+
+\begin{entrylist}
+  \item \textbf{AI/ML crash course for geospatial applications} (foundation models, diffusion models, GNNs, agentic AI). Science Social, PNNL.
+  \item \textbf{NotebookLM for scientific research.} Science Social, PNNL.
+  \item \textbf{Surface water dynamics from space.} GeoAI COIN webinar, PNNL.
+  \item \textbf{Weak Labels, Strong Learning.} TechFest, PNNL, 2025.
+  \item \textbf{From Global to Local: GeoAI for Surface Water.} Science Social on GeoAI, PNNL, 2024/25.
+  \item Organized the \textbf{GeoAI Hackathon} at TechFest, PNNL, 2026.
+\end{entrylist}
+
+% ================================================================
+\section*{Research Funding and Proposals}
+% ================================================================
+
+\begin{entrylist}
+  \item Co-Investigator, NASA Commercial Smallsat Data Acquisition (CSDA) program (\#80NSSC21K1163), evaluating commercial satellite data for flood and surface water applications.
+
+  \item Contributor, NASA Terrestrial Hydrology (\#80NSSC21K1341) and NASA ACCESS\allowbreak{} (\#80NSSC22K0744) awards on urban flood and global surface water mapping.
+
+  \item Co-Investigator on internal Laboratory Directed Research and Development (LDRD) proposals at PNNL (\$55,000 awarded to date); submitted two additional LDRD proposals as Co-I in FY2026 (not funded), including a joint proposal with a PCSD PI.
+\end{entrylist}
+
+% ================================================================
+\section*{Professional Service}
+% ================================================================
+
+\begin{entrylist}
+  \item \textbf{Session Co-Convener:} IEEE International Geoscience and Remote Sensing Symposium (IGARSS), 2026 and 2023.
+
+  \item \textbf{NASA Peer Review Panelist} (2023): Invited to review federal research proposals for potential funding.
+
+  \item \textbf{Journal Peer Reviewer:} \emph{npj Climate and Atmospheric Science}; \emph{ISPRS Journal of Photogrammetry and Remote Sensing}; \emph{Water Security}.
+
+  \item \textbf{Research Mentorship:} Co-supervised four Ph.D.\ candidates at the University of Arizona; currently mentoring a high school student researcher at PNNL.
+
+  \item \textbf{Collaborations:} Active research collaborations with the University of Arizona, University of Maryland, NASA Goddard Space Flight Center, University of Wisconsin, University of Nevada, and Princeton University.
+
+  \item \textbf{Institutional Service, The Ohio State University:} College of Arts and Sciences Dean's Student Advisory Board (2019--20); Health, Wellness, and Safety Committee (2019--20); Delegate, Council of Graduate Students (2018--20); Judge, Career Development Grant (2019) and Ray Travel Award (2018--19).
+\end{entrylist}
+
+% ================================================================
+\section*{Awards and Honors}
+% ================================================================
+
+\begin{entrylist}
+  \item \textbf{Lakshmanan Chatterjee Fellowship for Outstanding Ph.D.\ Student} --- Department of Geography, The Ohio State University, 2019
+  \item \textbf{First Place in Academics}, M.Sc. Geo-Informatics --- Birla Institute of Technology, Mesra, India, 2011--2013
+  \item \textbf{Individual and Team Excellence Awards} --- Cognizant Technology Solutions, 2014
+\end{entrylist}
+
+\end{document}
