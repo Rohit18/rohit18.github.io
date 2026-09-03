@@ -17,6 +17,7 @@ body { margin: 0; background: var(--bg); color: var(--text); font: 1.04rem/1.65 
 .w { max-width: 960px; margin: 0 auto; padding: 1.7rem 1.5rem 3rem; }
 h1, h2, h3 { color: var(--heading); font-weight: 600; line-height: 1.2; }
 h1 { font-size: clamp(2rem, 4vw, 2.8rem); margin: .6rem 0 1.2rem; letter-spacing: -.025em; }
+#intro-title { font-size: clamp(1.8rem, 3.6vw, 2.5rem); }
 h2 { font-size: 1.8rem; margin: 0 0 1rem; }
 h3 { font-size: 1.4rem; margin: .4rem 0 .6rem; }
 p { margin: 0 0 1rem; }
