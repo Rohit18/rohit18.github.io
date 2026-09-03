@@ -3,10 +3,9 @@ layout: default
 ---
 {% include site_header.html %}
 <section class="intro" aria-labelledby="intro-title">
-  <div><p class="eyebrow">Remote sensing · Machine learning · Earth science</p>
+  <div>
     <h1 id="intro-title">Rohit Mukherjee, Ph.D.</h1>
     <p class="lead">I develop machine learning methods and satellite datasets to understand flooding, surface water, and urban environments.</p>
-    <p>My work combines multi-sensor Earth observation, geospatial foundation models, and rigorous validation to support climate and Earth science research.</p>
     <p>I am a Postdoctoral Research Associate at <a href="https://www.pnnl.gov/atmospheric-climate-and-earth-sciences-division">Pacific Northwest National Laboratory</a>, where I study global flood occurrence, urban vegetation, and urban representation in Earth system models.</p>
     <p id="contact">For research collaborations and questions about my work, email <a href="mailto:rohitmukherjee@live.com">rohitmukherjee@live.com</a>.</p>
   </div>
@@ -15,7 +14,9 @@ layout: default
 <section id="research">
   <h2>Research</h2>
 <section id="global-flooding"><h3>Global flooding and surface water</h3>
-  <p>I study chronic flooding using a global 10-meter flood-occurrence dataset. I also develop GroundFlood-3K (<a href="https://rohitmukherjee.space/tmw/">imagery gallery</a>), an approximately 3,000-chip flood benchmark, and Sentinel-1 water-mapping methods using AlphaEarth embeddings.</p>
+  <p>I study chronic flooding using a global 10-meter flood-occurrence dataset. I also develop GroundFlood-3K (<a href="https://rohitmukherjee.space/tmw/">imagery gallery</a>), an approximately 3,000-chip flood benchmark.</p>
+  <p>My ongoing work uses Dynamic World weak labels, Sentinel-1 radar, and AlphaEarth embeddings to extend surface-water monitoring across sensors. I am developing human-in-the-loop post-training workflows for flood models and exploring applications to river-width measurement.</p>
+  <p>I also deployed a locally fine-tuned Sentinel-1 inundation model in a <a href="https://assets.rgvflood.arizona.edu/">public application for the Rio Grande Valley</a>.</p>
   <p class="resource-links"><a href="https://zenodo.org/records/15109426">Flood-occurrence dataset</a><a href="https://docs.google.com/presentation/d/1UvzCDatVl2JeWink2RUmuM5N5_KXYtpi/edit">AGU 2025 slides</a><a href="/#manuscripts">Manuscripts</a></p>
 </section>
 
@@ -32,7 +33,7 @@ layout: default
 </section>
 
 <section id="urban-flooding">
-    <h3>Urban Flood Mapping</h3>
+    <h3>Urban Flood Observations</h3>
     <p> A NASA Terrestrial Hydrology Project (#80NSSC21K1341). PI: Beth Tellman.</p>
     <p>Mapping urban floods is challenging because the urban landscape is complex and heterogeneous. To address this, we built <em>Urban Flood Observations</em> (UFO!), a hand-labeled dataset that captures urban flooding across 14 cities worldwide using PlanetScope imagery.</p>
     <p>{% include paper_reference.html id="ufo" label="Preprint" %}</p>
@@ -49,8 +50,6 @@ layout: default
     <h3>Global Surface Water Dataset</h3>
     <p>A NASA ACCESS Project (#80NSSC22K0744). In collaboration with Frederick Policelli and Beth Tellman. </p>
     <p>I led the development of a globally sampled, hand-labeled validation dataset using PlanetScope imagery, published in <em>Earth System Science Data</em> in 2024. This work supports independent evaluation of satellite surface-water maps.</p>
-<p>My ongoing work uses Dynamic World weak labels, Sentinel-1 radar, and AlphaEarth embeddings to extend surface-water monitoring across sensors. I am developing human-in-the-loop post-training workflows for flood models and exploring applications to river-width measurement.</p>
-<p>I also deployed a locally fine-tuned Sentinel-1 inundation model in a public application for the Rio Grande Valley, in partnership with Development Seed.</p>
     <p>{% include paper_reference.html id="surface-water" label="Paper" %}</p>
     <img loading="lazy" src="/images/SW.png" alt="Surface water classification examples">
     <p><b>NASA CSDA (#80NSSC21K1163)</b> funded project on evaluating BlackSky, where I am a Co-Investigator.</p>
@@ -196,7 +195,8 @@ layout: default
       Advisor: Dr. Desheng Liu</li>
     <li><strong>M.Sc., Geo-Informatics</strong>, Birla Institute of Technology, Mesra, India<br>
       <em>Thesis: "Extraction of Impervious Features through Artificial Neural Network using Spectral Indices"</em><br>
-      Advisor: Dr. Nilanchal Patel</li>
+      Advisor: Dr. Nilanchal Patel<br>
+      Patel, N., &amp; <strong>Mukherjee, R.</strong> <a href="https://doi.org/10.1007/s12517-014-1492-x">Extraction of impervious features from spectral indices using artificial neural network</a> (<em>Arabian Journal of Geosciences</em>, 2015). 8(6), 3729–3741.</li>
     <li><strong>B.Sc., Computer Science</strong>, St. Xavier's College, Kolkata, India<br>
       <em>Thesis: "A Social Networking Website for Academics (SharEd)"</em></li>
   </ul>
